@@ -1,0 +1,3 @@
+[submodule "simple_api"]
+	path = simple_api
+	url = git@github.com:agrrh-/simple_api.git
