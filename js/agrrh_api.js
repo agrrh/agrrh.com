@@ -1,5 +1,5 @@
-//var api_url = "//" + window.location.hostname + ":5000/"
-var api_url = "//10.0.51.11:5000/"
+var api_url = "//" + window.location.hostname + ":5000/"
+//var api_url = "//127.0.0.1:5000/"
 
 function nav_set_onclick(subject) {
     var link = "a_" + subject
