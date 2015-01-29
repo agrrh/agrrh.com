@@ -7,6 +7,9 @@ function nav_set_onclick(subject) {
 
     $("#" + link).click(
         function(e){
+            $("#post_title").html('Loading');
+            $("#post_data").html('<span class="fa fa-spin fa-spinner"></span>');
+
             $.get( api_url + query, function( data ) {
                 $("#post_title").html(data['title']);
                 $("#post_data").html(data['data']);
