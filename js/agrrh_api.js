@@ -7,10 +7,12 @@ function nav_set_onclick(subject) {
 
     $("#" + link).click(
         function(e){
+            $("#post_icon").attr("class", "fa fa-spin fa-spinner");
             $("#post_title").html('Loading');
-            $("#post_data").html('<span class="fa fa-spin fa-spinner"></span>');
+            $("#post_data").html('...');
 
             $.get( api_url + query, function( data ) {
+                $("#post_icon").attr("class", "fa fa-file-o");
                 $("#post_title").html(data['title']);
                 $("#post_data").html(data['data']);
 
