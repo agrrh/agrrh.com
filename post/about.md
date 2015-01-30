@@ -1,4 +1,5 @@
 Hello there!
+===
 
 My name is Kirill, I was born at the USSR and worked as:
 
@@ -7,12 +8,12 @@ My name is Kirill, I was born at the USSR and worked as:
 - System administrator
 
 hobbies
-===
+---
 
 Dramatic movies and lots of gaming.
 
 skills
-===
+---
 
 PC hardware and software
 Networking a lot
