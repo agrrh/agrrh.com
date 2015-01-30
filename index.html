@@ -1,5 +1,5 @@
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
 
     <link rel="icon" href="./img/favicon.ico">
@@ -11,9 +11,10 @@
 
     <script src="./js/jquery-1.11.2.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
+
     <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -31,7 +32,7 @@
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <span class="fa fa-warning" id="post_icon"></span> <span id="post_title">Warning message</span>
+                        <div class="text-muted"><span class="fa fa-warning" id="post_icon"></span> <span id="post_title">Warning message</span></div>
                     </div>
                     <div class="panel-body" id="post_data">
                         <p>Well, if you can read this - your browser probably do not have JavaScript enabled or my API broke down.</p>
@@ -42,15 +43,25 @@
             </div>
 
             <div class="col-lg-4">
-                <h2 class="text-muted" id="tree_title">Tree</h2>
-                <hr>
-                <div id="tree_data">
-                    <p>Same things here.</p>
+                <div>
+                    <h2 class="text-muted" id="tree_title"><span class="fa fa-sitemap"></span> Data tree</h2>
+                    <hr>
+                    <div id="tree_data">
+                        <p>Work in progress</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-muted" id="tree_title"><span class="fa fa-github"></span> Latest updates</h2>
+                    <hr>
+                    <div id="github_data">
+                        <p><span class="fa fa-spin fa-spinner"></span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="./js/agrrh_api.js"></script>
-  </body>
+</body>
 </html>
