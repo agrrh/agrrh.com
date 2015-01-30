@@ -12,7 +12,7 @@ function nav_set_onclick(subject) {
             $("#post_data").html('...');
 
             $.get( api_url + query, function( data ) {
-                $("#post_icon").attr("class", "fa fa-file-o");
+                $("#post_icon").attr("class", "fa fa-file-text-o");
                 $("#post_title").html(data['title']);
                 $("#post_data").html(data['data']);
 
@@ -25,5 +25,35 @@ function nav_set_onclick(subject) {
     );
 }
 
+function nav_github_feed() {
+    $( document ).ready(function() {
+        $.get( "https://api.github.com/repos/agrrh-/agrrh.com/commits", function( data ) {
+            $("#github_data").html("");
+
+            console.log(data);
+
+            var i = 0;
+
+            while (i < 5) {
+                console.log(data[i]);
+                item = data[i]
+
+                $("#github_data").append(
+                    '<p class="text-right">' +
+                    item['commit']['message'] + ' ' +
+                    '<a class="small" href="'+item['html_url']+'">@'+item['sha'].substring(0,7)+'</a>' +
+                    '</p>'
+                );
+
+                i++;
+            }
+        });
+    });
+}
+
+// -----------------------------------------------------
+
 nav_set_onclick("about");
 nav_set_onclick("contacts");
+
+nav_github_feed();
