@@ -1,5 +1,7 @@
-var api_url = "//" + window.location.hostname + ":5000/"
-//var api_url = "//127.0.0.1:5000/"
+var web_url = "//" + window.location.hostname + "/"
+
+var api_url = "//agrrh.com/api/"
+//var web_url = "//agrrh.com/"
 
 function nav_set_onclick(subject) {
     var link = "a_" + subject
@@ -27,15 +29,26 @@ function nav_set_onclick(subject) {
 
 function nav_github_feed() {
     $( document ).ready(function() {
+        $("#tree_data").html("");
+
+        $.get( api_url, function(data) {
+            $.each(data['childs'], function(index, child) {
+                $("#tree_data").append(
+                    '<p><span class="fa fa-file-text-o"></span> <a href="' + web_url + child + '">' + child + '</a></p>'
+                );
+            });
+        });
+    });
+}
+
+function nav_data_feed() {
+    $( document ).ready(function() {
         $.get( "https://api.github.com/repos/agrrh-/agrrh.com/commits", function( data ) {
             $("#github_data").html("");
-
-            console.log(data);
 
             var i = 0;
 
             while (i < 5) {
-                console.log(data[i]);
                 item = data[i]
 
                 $("#github_data").append(
@@ -56,4 +69,5 @@ function nav_github_feed() {
 nav_set_onclick("about");
 nav_set_onclick("contacts");
 
+nav_data_feed();
 nav_github_feed();
