@@ -8,11 +8,15 @@ function entry_display(path) {
     $("#post_title").html('Loading');
     $("#post_data").html('...');
 
-    $.get( api_url + query, function( data ) {
-        $("#post_icon").attr("class", "fa fa-file-text-o");
-        $("#post_title").html(data['title']);
-        $("#post_data").html(data['data']);
-    });
+    $.get(
+        api_url + query,
+        function( data ) {
+            $("#post_icon").attr("class", "fa fa-file-text-o");
+            $("#post_title").html(data['title']);
+            $("#post_data").html(data['data']);
+        },
+        'json'
+    );
 }
 
 function nav_set_onclick(subject) {
@@ -25,14 +29,18 @@ function nav_set_onclick(subject) {
             $("#post_title").html('Loading');
             $("#post_data").html('...');
 
-            $.get( api_url + query, function( data ) {
-                $("#post_icon").attr("class", "fa fa-file-text-o");
-                $("#post_title").html(data['title']);
-                $("#post_data").html(data['data']);
+            $.get(
+                api_url + query,
+                function( data ) {
+                    $("#post_icon").attr("class", "fa fa-file-text-o");
+                    $("#post_title").html(data['title']);
+                    $("#post_data").html(data['data']);
 
-                $(".active").removeClass("active");
-                $("#" + link).parent().attr("class", "active");
-            });
+                    $(".active").removeClass("active");
+                    $("#" + link).parent().attr("class", "active");
+                },
+                'json'
+            );
 
             return false;
         }
@@ -40,8 +48,6 @@ function nav_set_onclick(subject) {
 }
 
 function nav_data_feed(root) {
-    console.log(root);
-
     $( document ).ready(function() {
         $("#tree_data").html("");
 
@@ -51,42 +57,50 @@ function nav_data_feed(root) {
             );
         }
 
-        $.get( api_url + root, function(data) {
-            $.each(data['childs'][0], function(index, child) {
-                $("#tree_data").append(
-                    '<p><span class="fa fa-folder-o"></span> <a href="#" onclick="nav_data_feed(\'' + root + '/' + child + '\')">' + child + '</a></p>'
-                );
-            });
+        $.get(
+            api_url + root,
+            function(data) {
+                $.each(data['childs'][0], function(index, child) {
+                    $("#tree_data").append(
+                        '<p><span class="fa fa-folder-o"></span> <a href="#" onclick="nav_data_feed(\'' + root + '/' + child + '\')">' + child + '</a></p>'
+                    );
+                });
 
-            $.each(data['childs'][1], function(index, child) {
-                $("#tree_data").append(
-                    '<p><span class="fa fa-file-text-o"></span> <a href="#" onclick="entry_display(\'' + root + '/' + child + '\')">' + child + '</a></p>'
-                );
-            });
-        });
+                $.each(data['childs'][1], function(index, child) {
+                    $("#tree_data").append(
+                        '<p><span class="fa fa-file-text-o"></span> <a href="#" onclick="entry_display(\'' + root + '/' + child + '\')">' + child + '</a></p>'
+                    );
+                });
+            },
+            'json'
+        );
     });
 }
 
 function nav_github_feed() {
     $( document ).ready(function() {
-        $.get( "https://api.github.com/repos/agrrh-/agrrh.com/commits", function( data ) {
-            $("#github_data").html("");
+        $.get(
+            "https://api.github.com/repos/agrrh-/agrrh.com/commits",
+            function( data ) {
+                $("#github_data").html("");
 
-            var i = 0;
+                var i = 0;
 
-            while (i < 5) {
-                item = data[i]
+                while (i < 5) {
+                    item = data[i]
 
-                $("#github_data").append(
-                    '<p class="text-right">' +
-                    item['commit']['message'] + ' ' +
-                    '<a class="small" href="' + item['html_url'] + '">@' + item['sha'].substring(0,7) + '</a>' +
-                    '</p>'
-                );
+                    $("#github_data").append(
+                        '<p class="text-right">' +
+                        item['commit']['message'] + ' ' +
+                        '<a class="small" href="' + item['html_url'] + '">@' + item['sha'].substring(0,7) + '</a>' +
+                        '</p>'
+                    );
 
-                i++;
-            }
-        });
+                    i++;
+                }
+            },
+            'json'
+        );
     });
 }
 
