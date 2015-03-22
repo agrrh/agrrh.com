@@ -1,7 +1,19 @@
 var web_url = "//" + window.location.hostname + "/"
+var api_url = web_url + "api/"
 
-var api_url = "//agrrh.com/api/"
-//var web_url = "//agrrh.com/"
+function entry_display(path) {
+    var query = path
+
+    $("#post_icon").attr("class", "fa fa-spin fa-spinner");
+    $("#post_title").html('Loading');
+    $("#post_data").html('...');
+
+    $.get( api_url + query, function( data ) {
+        $("#post_icon").attr("class", "fa fa-file-text-o");
+        $("#post_title").html(data['title']);
+        $("#post_data").html(data['data']);
+    });
+}
 
 function nav_set_onclick(subject) {
     var link = "a_" + subject
@@ -27,21 +39,35 @@ function nav_set_onclick(subject) {
     );
 }
 
-function nav_github_feed() {
+function nav_data_feed(root) {
+    console.log(root);
+
     $( document ).ready(function() {
         $("#tree_data").html("");
 
-        $.get( api_url, function(data) {
-            $.each(data['childs'], function(index, child) {
+        if ( root != "/" ) {
+            $("#tree_data").append(
+                '<p><span class="fa fa-folder-o"></span> <a href="#" onclick="nav_data_feed(\'/\')">[root]</a></p>'
+            );
+        }
+
+        $.get( api_url + root, function(data) {
+            $.each(data['childs'][0], function(index, child) {
                 $("#tree_data").append(
-                    '<p><span class="fa fa-file-text-o"></span> <a href="' + web_url + child + '">' + child + '</a></p>'
+                    '<p><span class="fa fa-folder-o"></span> <a href="#" onclick="nav_data_feed(\'' + root + '/' + child + '\')">' + child + '</a></p>'
+                );
+            });
+
+            $.each(data['childs'][1], function(index, child) {
+                $("#tree_data").append(
+                    '<p><span class="fa fa-file-text-o"></span> <a href="#" onclick="entry_display(\'' + root + '/' + child + '\')">' + child + '</a></p>'
                 );
             });
         });
     });
 }
 
-function nav_data_feed() {
+function nav_github_feed() {
     $( document ).ready(function() {
         $.get( "https://api.github.com/repos/agrrh-/agrrh.com/commits", function( data ) {
             $("#github_data").html("");
@@ -54,7 +80,7 @@ function nav_data_feed() {
                 $("#github_data").append(
                     '<p class="text-right">' +
                     item['commit']['message'] + ' ' +
-                    '<a class="small" href="'+item['html_url']+'">@'+item['sha'].substring(0,7)+'</a>' +
+                    '<a class="small" href="' + item['html_url'] + '">@' + item['sha'].substring(0,7) + '</a>' +
                     '</p>'
                 );
 
@@ -69,5 +95,8 @@ function nav_data_feed() {
 nav_set_onclick("about");
 nav_set_onclick("contacts");
 
-nav_data_feed();
+nav_data_feed("/");
 nav_github_feed();
+
+entry_display("/about.md");
+$("#a_about").parent().attr("class", "active");
