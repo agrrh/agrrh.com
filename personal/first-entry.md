@@ -1,6 +1,5 @@
 Title: First Entry
 Date: 2015-07-17 10:02
-Category: blog
 Tags: dates
 Authors: Kirill Kovalev
 Summary: My new brand blog birthday!
