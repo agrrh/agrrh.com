@@ -34,7 +34,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-        ('VK', 'https://vk.com/agrrh'),
+    ('VK', 'https://vk.com/agrrh'),
 	('GitHub', 'https://github.com/agrrh-'),
 	('BitBucket', 'https://bitbucket.org/agrrh'),
 )
