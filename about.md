@@ -6,6 +6,8 @@ Date: 2015-07-17 10:58
 
 Hello!
 
+![Here's how I look like]({filename}/blog/author.jpg)
+
 I'm Kirill Kovalev.
 
 I was born in 1990, same day Debian was firstly released.
