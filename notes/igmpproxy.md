@@ -1,11 +1,15 @@
-How to proxy IGMP / IPTV over NAT
+Title: How to proxy IGMP / IPTV over NAT
+Date: 2015-07-17 12:45
+Tags: igmp, iptv, iptables
+
+*This article is kinda old!* I'm currently using [udpxy](http://www.udpxy.com/index-en.html) which probably much better solution for PAN usage.
 
 First, here's my gateway scheme:
 
-eth0 - WAN
-eth1 - LAN
+- eth0 - WAN
+- eth1 - LAN
 
-! iptables default INPUT policy was DROP, so I needed to allow IGMP traffic:
+My iptables default INPUT policy was DROP, so I needed to allow IGMP traffic:
 
 ```
 iptables -A FORWARD -p igmp -i eth0 -o eth1 -j ACCEPT
@@ -14,7 +18,7 @@ iptables -A FORWARD -s 224.0.0.0/4 -j ACCEPT
 iptables -A INPUT -s 224.0.0.0/4 -j ACCEPT
 ```
 
-First, get igmpproxy:
+Now get igmpproxy:
 http://sourceforge.net/projects/igmpproxy/
 
 ```
@@ -24,7 +28,7 @@ cd igmpproxy-*
 checkinstall -D -y --pkgname=igmpproxy
 dpkg -i igmpproxy_0.1-beta2-1_amd64.deb
 ```
-Afterwards yo will need to start it and 
+Afterwards yo will need to start it and
 
 ```
 cp /usr/local/etc/igmpproxy.conf /etc/igmpproxy.conf
@@ -58,8 +62,10 @@ phyint mon.wlan0 disabled
 phyint wlan0 disabled
 ```
 
-And let's start it!
+An you could then start it with following command:
 
 ```
 igmpproxy -d /etc/igmpproxy.conf > /var/log/igmpproxy.log 2>&1 &
 ```
+
+Of course, better idea is to use init-scripts, but in Debian-family distros default init systems changing too fast right now, so you could try it on your own :)
