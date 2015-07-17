@@ -1,8 +1,5 @@
-Title: Projects
+Title: Perisher
 Date: 2015-07-17 13:09
-
-Perisher
----
 
 Client-server application to monitor overall health of small debian-like hosts group.
 
