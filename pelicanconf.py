@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 STATIC_PATHS = ['pages', 'downloads', 'media']
-ARTICLE_PATHS = ['blog', 'notes', 'projects']
+ARTICLE_PATHS = ['personal', 'technical', 'projects']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
@@ -36,7 +36,6 @@ LINKS = (
 SOCIAL = (
     ('VK', 'https://vk.com/agrrh'),
 	('GitHub', 'https://github.com/agrrh-'),
-	('BitBucket', 'https://bitbucket.org/agrrh'),
 )
 
 DEFAULT_PAGINATION = 15
