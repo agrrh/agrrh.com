@@ -3,7 +3,7 @@ Date: 2015-07-17 10:58
 
 Hello!
 
-![Here's how I look like]({filename}/blog/author.jpg)
+![Here's how I look like]({filename}/pages/photo.jpg)
 
 I'm Kirill Kovalev.
 
