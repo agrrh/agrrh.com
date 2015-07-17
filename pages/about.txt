@@ -1,0 +1,26 @@
+About
+##############
+
+Title: First Entry
+Date: 2015-07-17 10:31
+Category: blog
+Tags: dates
+
+Hello!
+
+My name is Kirill and I was born in 1990, same day Debian was firstly released.
+
+Working as head of technical support department and partially system administrator at the best hosting provider company. :)
+
+# hobbies
+Dramatic movies and lots of gaming.
+
+# skills/tags
+pc hardware and software
+networking a lot
+linux - debian, centos, openvz
+web - nginx, apache, php, mysql
+misc - samba, postfix, lvm
+and so on
+
+Feel free to contact me via email: agrrh.weblog [at] gmail.com
