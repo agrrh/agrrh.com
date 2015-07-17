@@ -36,7 +36,7 @@ From 1.5 to 3 thousands of issues were resolved every month at the positions of 
 
 -------
 
-### Technical skills
+### Technologies familiar with
 
 Bash, Python, Perl
 
@@ -97,6 +97,8 @@ As technical support specialist:
 - Almost any task client could ask to do
 
 #### Technical Support specialist at Yota (2012-2012)
+
+#### Freelancer at Home (2009-...)
 
 ---
 
