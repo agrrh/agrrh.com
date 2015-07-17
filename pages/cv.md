@@ -6,8 +6,8 @@ Date: 2015-07-17 15:00
 
 #### Contact
 - Mail: [kovalev.kirill.a@gmail.com](mailto:kovalev.kirill.a@gmail.com)
-- [Personal Webpage](http://agrrh.com/)
-- [Github](http://www.github.com/agrrh-/)
+- Site: [http://agrrh.com](http://agrrh.com/)
+- Github: [https://github.com/agrrh-](https://github.com/agrrh-)
 
 ------
 
