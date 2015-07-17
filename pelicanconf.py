@@ -17,8 +17,8 @@ TIMEZONE = 'Europe/Moscow'
 DEFAULT_LANG = 'en'
 
 THEME = './pelican-bootstrap3'
-BOOTSTRAP_THEME = 'yeti'
-PYGMENTS_STYLE = 'monokai'
+BOOTSTRAP_THEME = 'sandstone'
+PYGMENTS_STYLE = 'solarizedlight'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
