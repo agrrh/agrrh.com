@@ -27,6 +27,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+TAG_URL = 'tag/{slug}.html'
+TAG_SAVE_AS = 'tag/{slug}.html'
+
 # Blogroll
 LINKS = (
 	('Pelican', 'http://getpelican.com/'),
