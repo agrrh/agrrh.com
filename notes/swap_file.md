@@ -1,8 +1,6 @@
 Title: Swap in a file
 Date: 2015-07-17 11:59
-Category: notes
 Tags: swap
-Authors: Kirill Kovalev
 Summary: Fast and simple way to get some swap space without reboot
 
 Let's say you got no swap partition, but want to use some swap space.
