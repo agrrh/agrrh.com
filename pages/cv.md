@@ -1,4 +1,4 @@
-Title: My CV
+Title: CV
 Date: 2015-07-17 15:00
 
 ## Kirill Alexandrovich Kovalev
