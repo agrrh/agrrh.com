@@ -11,6 +11,13 @@ Client-server application to monitor overall health of small debian-like hosts g
 
 ![preview]({filename}/media/perisher-showoff-host.png)
 
+Advantages/Disadvantages:
+
+- Designed to use without disturbing disks, usually client utilizes zero I/O operations during data collection. Most of the data gathered from RAM.
+- Server saves all the data in RAM too, so there's no performance problems on reading with the dozens and thousands of clients.
+- Application is not finished yet. Got tons of bugs and issues to work on.
+- SQLite could act as bottleneck when there's large number of write operations occurs at the same time.
+
 Technologies used:
 
 - Server: Python3, SQLite
@@ -20,4 +27,4 @@ Technologies used:
     - Jinja2
     - jQuery
 
-Using this at my PAN, many features to come.
+Kinda useful tool to use at any PAN full of Debian boxes.
