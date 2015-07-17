@@ -76,3 +76,5 @@ You could also want to check watchdog by doing fork bomb or just killing the pro
     :(){ :|:& };:
 
     kill -9 $(pidof watchdog)
+
+Server should stop responding and after few moment go for a reboot.
