@@ -10,7 +10,6 @@ Client-server application to monitor overall health of small debian-like hosts g
 [ [latest *.deb](http://perisher.agrrh.com/download/) ]
 
 ![preview]({filename}/media/perisher-showoff-host.png)
-![preview]({filename}/media/perisher-showoff-journal.png)
 
 Technologies used:
 
