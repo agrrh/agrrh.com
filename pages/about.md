@@ -19,7 +19,7 @@ My professional experience includes (from older to recent):
 - Head of technical support department
 - Technical support specialist @ Internet Service and Hosting Providers
 
-See [CV page]({filename}pages/cv.md) to know more in this perspective.
+See [CV page]({filename}cv.md) to know more in this perspective.
 
 ---
 
