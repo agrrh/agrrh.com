@@ -13,7 +13,7 @@ Currently living in Saint-Petersburg, Russian Federation.
 
 ---
 
-My professional experience includes (from older to recent):
+My professional experience includes (from recent to older):
 
 - System administrator (DevOps) at Yandex
 - Head of technical support department
