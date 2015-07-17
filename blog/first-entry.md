@@ -1,6 +1,3 @@
-First Entry
-##############
-
 Title: First Entry
 Date: 2015-07-17 10:02
 Category: blog
