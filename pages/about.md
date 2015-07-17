@@ -20,9 +20,3 @@ My professional experience includes (from older to recent):
 - Technical support specialist @ Internet Service and Hosting Providers
 
 See [CV page]({filename}cv.md) to know more in this perspective.
-
----
-
-Feel free to contact me via email after proving you're not a robot :)
-
-It's in lowercase: my last name, dot, first name, dot, letter "a". All at gmail.
