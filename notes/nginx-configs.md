@@ -2,7 +2,7 @@ Title: Nginx basic config examples
 Tags: nginx
 Date: 2015-07-17 12:30
 
-Never better than [http://nginx.org/en/docs/](official nginx docs), but could be useful to rapidly deploy a webpage.
+Never better than [official nginx docs](http://nginx.org/en/docs/), but could be useful to rapidly deploy a webpage.
 
 Return 444 when unknown domain asked:
 
