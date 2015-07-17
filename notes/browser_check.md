@@ -1,8 +1,6 @@
 Title: mod_rewrite and User-agent
 Date: 2015-07-17 11:27
-Category: notes
 Tags: apache, mod_rewrite
-Authors: Kirill Kovalev
 Summary: Rewrite rule that restricts access, based on User-agent
 
 This was an exam task somewhere.
