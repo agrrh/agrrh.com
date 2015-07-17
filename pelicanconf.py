@@ -7,7 +7,7 @@ SITENAME = 'Keep It Simple'
 SITEURL = ''
 
 PATH = 'content'
-STATIC_PATHS = ['blog', 'notes', 'downloads']
+STATIC_PATHS = ['blog', 'pages', 'notes', 'downloads']
 ARTICLE_PATHS = ['blog', 'notes']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
