@@ -1,4 +1,4 @@
-Title: CV Kirill Kovalev
+Title: My CV
 Date: 2015-07-17 15:00
 
 ## Kirill Alexandrovich Kovalev
@@ -6,7 +6,6 @@ Date: 2015-07-17 15:00
 
 #### Contact
 - Mail: [kovalev.kirill.a@gmail.com](mailto:kovalev.kirill.a@gmail.com)
-- Phone: [+7 999 200 5151](tel:+79992005151)
 - [Personal Webpage](http://agrrh.com/)
 - [Github](http://www.github.com/agrrh-/)
 
@@ -49,9 +48,9 @@ HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2
 
 MySQL, SQLite - replication
 
-Haproxy - balancing, GET-parameters routing
+Haproxy - balancing, routing rules
 
-Ansible, Salt - was the second man after migration from Ansible to Salt at Yandex
+Ansible, Salt
 
 Teamcity, Jenkins, Travis CI
 
@@ -115,7 +114,7 @@ Russian, English
 ### Hobbies
 
 - Watching dramatic movies
-- Doing some weekend projects
+- Doing some weekend IT projects
 - Music writing
 
 ------
