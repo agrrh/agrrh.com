@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 STATIC_PATHS = ['pages', 'downloads', 'media']
-ARTICLE_PATHS = ['blog', 'notes']
+ARTICLE_PATHS = ['blog', 'notes', 'projects']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
