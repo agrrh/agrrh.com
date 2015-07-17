@@ -29,8 +29,13 @@ AUTHOR_FEED_RSS = None
 
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
+
 TAG_CLOUD_MAX_ITEMS = 10
+DISPLAY_TAGS_INLINE = True
 TAGS_URL = 'tags.html'
+
+PLUGIN_PATHS = ["/opt/pelican-plugins"]
+PLUGINS = ["tag_cloud"]
 
 # Blogroll
 LINKS = (
