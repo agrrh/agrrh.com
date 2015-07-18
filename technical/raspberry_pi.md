@@ -4,13 +4,13 @@ Tags: raspberry pi, watchdog, fork bomb
 
 All recipes here related to Raspbian OS.
 
-##### Change Raspberry PI MAC
+### Change Raspberry PI MAC
 
 Add this argument (not as new line, just continue one which already present!) to the end of `/boot/cmdline.txt`:
 
     smsc95xx.macaddr=00:00:00:00:00:01
 
-##### Disable screensaver
+### Disable screensaver
 
 Just add those to any executable script and run.
 
@@ -20,7 +20,7 @@ Just add those to any executable script and run.
 
 For example, `~/.xsessionrc` would be fine.
 
-##### Enable sound on headless Raspberry
+### Enable sound on headless Raspberry
 
 Enable sound output in the kernel:
 
@@ -38,7 +38,7 @@ Now play something with mocp:
 
     mocp
 
-##### Watchdog to reboot hung Raspberry
+### Watchdog to reboot hung Raspberry
 
 There's two parts of watchdog in Raspberry Pi - hardware one integrated with SoC and software daemon.
 
