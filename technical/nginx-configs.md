@@ -1,10 +1,11 @@
 Title: Nginx basic config examples
 Tags: nginx
 Date: 2015-07-17 12:30
+Modified: 2015-07-18 13:34
 
 Never better than [official nginx docs](http://nginx.org/en/docs/), but could be useful to rapidly deploy a webpage.
 
-Return 444 when unknown domain asked:
+### Return 444 when unknown domain asked:
 
     server {
         listen                  0.0.0.0:80 default;
@@ -12,7 +13,7 @@ Return 444 when unknown domain asked:
         return                  444;
     }
 
-Default server with static data:
+### Default server with static data:
 
     server {
         listen                  0.0.0.0:80;
@@ -28,7 +29,7 @@ Default server with static data:
         }
     }
 
-Reverse proxy example:
+### Reverse proxy example:
 
     server {
         listen                  0.0.0.0:80;
@@ -42,7 +43,23 @@ Reverse proxy example:
         }
     }
 
-Example with php-fpm:
+### HTTP to HTTPS
+
+    server {
+        listen 10.0.0.1;
+        server_name example.org www.example.org;
+        rewrite ^ https://$server_name$request_uri? permanent;
+    }
+    server {
+        server_name example.org www.example.org;
+        listen 10.0.0.1:443 ssl;
+        ssl on;
+        ssl_certificate /var/www/httpd-cert/user/example.org.crt;
+        ssl_certificate_key /var/www/httpd-cert/user/example.org.key;
+        ...
+    }
+
+### Example with php-fpm:
 
     server {
         listen                  0.0.0.0:80;
@@ -71,7 +88,7 @@ Example with php-fpm:
         }
     }
 
-Wordpress site example:
+### Wordpress site example:
 
     upstream php {
             server unix:/var/run/php5-fpm.sock;
