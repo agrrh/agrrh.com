@@ -104,12 +104,12 @@ As technical support specialist:
 
 ### Education
 
-- __2009 - 2011__: IT in education specialist, Herzen University
+- __2009 - 2011__: IT in Education specialist, Herzen University
 - __2007 - 2009__: Physics and Optics specialist, ITMO University
 
 ----
 
-#### Languages
+### Languages
 
 Russian, English
 
