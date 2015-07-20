@@ -1,6 +1,6 @@
 Title: CV
 Date: 2015-07-17 15:00
-Modified: 2015-07-20 13:37
+Modified: 2015-07-20 19:40
 
 ## Kirill Alexandrovich Kovalev
 ### DevOps, IT specialist, Saint-Petersburg, Russian Federation
@@ -10,7 +10,7 @@ Modified: 2015-07-20 13:37
 - Site: [http://agrrh.com](http://agrrh.com/)
 - Github: [https://github.com/agrrh-](https://github.com/agrrh-)
 
-------
+---
 
 ### Profile
 
@@ -22,7 +22,7 @@ Can easily deploy a server, configure a load balancer, automate IT department bo
 
 Non-smoker.
 
-------
+---
 
 ### Professional skills
 
@@ -35,7 +35,7 @@ Best familiar with Debian-like distros. Detected and replaced dozens of faulty h
 #### Technical support
 From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
 
--------
+---
 
 ### Technologies familiar with
 
@@ -65,7 +65,7 @@ Software RAID (mdadm)
 
 Adaptec, 3ware, LSI hardware RAID controllers
 
-------
+---
 
 ### Experience
 
@@ -103,7 +103,17 @@ As head of department:
 
 #### Technical Support specialist at Yota (2012-2012)
 
-#### Freelancer at Home (2009-...)
+#### Technical Support specialist at local ISP (~2011)
+
+---
+
+### Projects participated
+
+- [Synergy](http://synergy-project.org/), software IP-KVM (2015)
+    - Localization, PR article
+- Inferna.ru, gaming portal (~2010)
+    - Integrated server monitoring scripts in PHP
+    - Wrote few gaming-related articles
 
 ---
 
@@ -112,7 +122,7 @@ As head of department:
 - __2009 - 2011__: IT in Education specialist, Herzen University
 - __2007 - 2009__: Physics and Optics specialist, ITMO University
 
-----
+---
 
 ### Languages
 
@@ -122,7 +132,8 @@ As head of department:
 ### Hobbies
 
 - Watching dramatic movies
-- Doing some weekend IT projects
-- Music writing
+- Dreaming about other planets colonization
+- Doing some weekend IT-related projects
+- Bad music writing
 
-------
+---
