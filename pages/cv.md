@@ -1,6 +1,6 @@
 Title: CV
 Date: 2015-07-17 15:00
-Modified: 2015-07-20 13:17
+Modified: 2015-07-20 13:37
 
 ## Kirill Alexandrovich Kovalev
 ### DevOps, IT specialist, Saint-Petersburg, Russian Federation
@@ -116,7 +116,8 @@ As head of department:
 
 ### Languages
 
-Russian, English
+- Russian - mother language
+- English - huge reading and writing experience, but lacks live communications
 
 ### Hobbies
 
