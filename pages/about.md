@@ -15,8 +15,8 @@ Currently live in Saint-Petersburg, Russian Federation.
 
 My professional experience includes (from recent to older):
 
-- System administrator (DevOps) at Yandex
+- System administrator (DevOps)
 - Head of technical support department
-- Technical support specialist @ Internet Service and Hosting Providers
+- Technical support specialist, ISP and Hosting
 
 See [CV page]({filename}cv.md) to know more in this perspective.
