@@ -82,19 +82,23 @@ Adaptec, 3ware, LSI hardware RAID controllers
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-centers at Estonia and Germany.
 
-Was elected to promotion by colleagues.
-
-As head of department:
-- Resolving difficult technical issues, conflict situations
-- Represented the company at the thematics forum
-- Interviewing applicants
-- Compiling working schedule, vacations
+Started as junior support specialist at 2012.
+Was promoted to senior specialist at 2013.
+Elected to promotion to head of department by colleagues at 2014.
 
 As technical support specialist:
+
 - Deploy of software on bare-metal servers
 - Hotfixing software issues
 - Diagnosing and replacing hardware on client's request (remote basis)
 - Almost any task client could ask to do
+
+As head of department:
+
+- Resolving difficult technical issues, conflict situations
+- Represented the company at the thematics forum
+- Interviewing applicants
+- Compiling working schedule, vacations
 
 #### Technical Support specialist at Yota (2012-2012)
 
