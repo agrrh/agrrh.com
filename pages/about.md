@@ -9,7 +9,7 @@ I'm Kirill Kovalev.
 
 I was born in 1990, same day Debian was firstly released.
 
-Currently living in Saint-Petersburg, Russian Federation.
+Currently live in Saint-Petersburg, Russian Federation.
 
 ---
 
