@@ -1,6 +1,6 @@
 Title: Tetris in LOVE
 Date: 2015-07-16 15:49
-Tags: lua, tetris
+Tags: lua, love2d, games
 
 Simple Tetris implementation, written in LUA with Love2d framework.
 

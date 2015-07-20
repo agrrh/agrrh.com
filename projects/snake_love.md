@@ -1,6 +1,6 @@
 Title: Snake in LOVE
 Date: 2015-07-20 23:47
-Tags: lua, tetris
+Tags: lua, love2d, games
 
 One more simple game reimplementation, now it's the Snake implementation (called Python in "Learning C for beginners" book, where I saw it for the first time at age ~7). Again LUA and Love2d.
 
