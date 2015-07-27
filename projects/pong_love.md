@@ -5,7 +5,7 @@ Tags: lua, love2d, games
 Now pong game to reborn in Love2d. :)
 
 [ [GitHub](https://github.com/agrrh-/love_pong) ]
-[ [snake.love]({filename}/downloads/pong.love) ]
+[ [pong.love]({filename}/downloads/pong.love) ]
 
 ![preview]({filename}/media/pong-love-showoff.png)
 
