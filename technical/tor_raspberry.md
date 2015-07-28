@@ -18,8 +18,9 @@ Tags: raspberry pi, tor, anonymous
 ### Подготовка
 
 Итак, что же нам потребуется:
-1 x Raspberry Pi
-1 x USB WiFi-адаптер
+
+- 1 x Raspberry Pi
+- 1 x USB WiFi-адаптер
 
 Свои Raspberry Pi я покупал [здесь](http://thepihut.com/collections/raspberry-pi), однако в доставке в Российскую Федерацию было отказано с отсылкой на «too unpredictable post service», так что для многих удобней будет воспользоваться следующим магазином или найти что-то третье.
 
