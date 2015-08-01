@@ -101,6 +101,11 @@ Just use following script:
 Also same result could be achieved with a script:
 
     #!/bin/bash
-    for pkg in `dpkg --get-selections | egrep -v deinstall | awk '{print $1}' | egrep -v '(dpkg|apt|mysql|mythtv)'` ; do apt-get -y install --reinstall $pkg ; done
+    PKGS=$(dpkg --get-selections | egrep -v deinstall | awk '{print $1}' | \
+    egrep -v '(dpkg|apt|aptitude|mysql)')
+
+    for pkg in $PKGS; do
+        apt-get -y install --reinstall $pkg
+    done
 
 Idea and second way scripts were copied from [this blog](http://sysadminnotebook.blogspot.ru/2012/06/how-to-reset-folder-permissions-to.html).
