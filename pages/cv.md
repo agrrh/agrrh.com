@@ -47,11 +47,11 @@ Apache - mostly PHP+MySQL sites, also SSL
 
 HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2
 
-MySQL, SQLite - replication
+MySQL - replication, also SQLite
 
 Haproxy - balancing, routing rules
 
-Ansible, Salt
+Ansible, also lot of Salt/Chef
 
 Teamcity, Jenkins, Travis CI
 
@@ -61,13 +61,19 @@ Debian, Ubuntu, Centos
 
 OpenVZ, ESXi
 
-Software RAID (mdadm)
+Software RAID, mdadm
 
 Adaptec, 3ware, LSI hardware RAID controllers
 
 ---
 
 ### Experience
+
+#### System Administrator (DevOps) at e4e5group (2015 - current)
+
+[e4e5group](http://e4e5group.ru/) 
+
+- Deploy CI system over the existing infrastructure
 
 #### System Administrator at Yandex (2014 - 2015)
 
