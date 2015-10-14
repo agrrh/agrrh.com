@@ -2,7 +2,9 @@ Title: Deploy of deb repository with reprepro
 Tags: deb, reprepro
 Date: 2015-10-14 12:10
 
-### Host setup
+This article represents instruction on setup debian repository with reprepro. Very basic, but still useful.
+
+Host setup:
 
     # as 'root' user
  
@@ -35,7 +37,7 @@ Date: 2015-10-14 12:10
  
     service nginx restart
 
-Example of conf/distributions:
+Example of `conf/distributions`:
 
     Origin: Debian
     Label: Wheezy apt repository
@@ -45,13 +47,13 @@ Example of conf/distributions:
     Description: Apt repository for Debian stable - Wheezy
     SignWith: CHANGEME # change to actual value, see with 'gpg --list-keys'
 
-Example of conf/options:
+Example of `conf/options`:
 
     verbose
     basedir /home/repo/repo
     ask-passphrase
 
-Example of simple nginx listing:
+Example of simple nginx directory listing via http:
 
     server {
       listen 80 default_server;
@@ -72,7 +74,7 @@ Usage examples:
 
     # as 'repo' user
     
-    # always work from repository base directory
+    # always work from repo's base directory
     cd ~/repo
     
     # include single deb package
@@ -80,7 +82,7 @@ Usage examples:
     reprepro export
  
     # remove single deb file
-    reprepro remove wheezy hicolor-icon-theme
+    reprepro remove wheezy PACKAGE_NAME
     reprepro export
 
 Client configuration:
@@ -93,4 +95,4 @@ Client configuration:
     echo "deb [arch=amd64] http://my-repo-address/repo wheezy main" >> /etc/apt/sources.list.d/my-repo.list
     apt-get update
  
-    apt-cache policy $SOME_PKG_NAME
+    apt-cache policy PACKAGE_NAME
