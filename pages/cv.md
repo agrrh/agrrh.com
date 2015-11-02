@@ -8,7 +8,7 @@ Modified: 2015-07-20 19:40
 #### Contact
 - Mail: [kovalev.kirill.a@gmail.com](mailto:kovalev.kirill.a@gmail.com)
 - Site: [http://agrrh.com](http://agrrh.com/)
-- Github: [https://github.com/agrrh-](https://github.com/agrrh-)
+- Github: [https://github.com/agrrh](https://github.com/agrrh)
 
 ---
 

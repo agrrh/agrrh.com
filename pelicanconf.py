@@ -39,13 +39,13 @@ PLUGINS = ["tag_cloud"]
 
 # Blogroll
 LINKS = (
-	('Pelican', 'http://getpelican.com/'),
+    ('Pelican', 'http://getpelican.com/'),
 )
 
 # Social widget
 SOCIAL = (
     ('VK', 'https://vk.com/agrrh'),
-	('GitHub', 'https://github.com/agrrh-'),
+    ('GitHub', 'https://github.com/agrrh'),
 )
 
 DEFAULT_PAGINATION = 15

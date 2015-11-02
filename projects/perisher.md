@@ -4,7 +4,7 @@ Tags: monitoring, python
 
 Client-server application to monitor overall health of small debian-like hosts group.
 
-[ [GitHub](https://github.com/agrrh-/perisher) ]
+[ [GitHub](https://github.com/agrrh/perisher) ]
 [ [latest *.deb](http://perisher.agrrh.com/download/) ]
 
 ![preview]({filename}/media/perisher-showoff-host.png)
