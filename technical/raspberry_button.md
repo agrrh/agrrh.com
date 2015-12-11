@@ -2,10 +2,10 @@ Title: Raspberry PI button
 Date: 2015-12-11 19:39
 Tags: raspberry pi, gpio
 
-I managed to attach a button to simple Raspberry PI case and here's the simple script to read it's state:
+I managed to attach a button to simple Raspberry PI case and here's the script to read it's state:
 
-    # should be ran as root
-    
+    # as 'root' user
+
     #!/bin/bash
 
     ## Author: Kirill K
