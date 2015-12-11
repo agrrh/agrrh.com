@@ -4,6 +4,8 @@ Tags: raspberry pi, gpio
 
 I managed to attach a button to simple Raspberry PI case and here's the simple script to read it's state:
 
+    # should be ran as root
+    
     #!/bin/bash
 
     ## Author: Kirill K
