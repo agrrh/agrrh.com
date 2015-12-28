@@ -2,7 +2,14 @@ Title: Raspberry PI button
 Date: 2015-12-11 19:39
 Tags: raspberry pi, gpio
 
-I managed to attach a button to simple Raspberry PI case and here's the script to read it's state:
+I managed to attach a button to simple Raspberry PI case and here's the script to read it's state and execute some other script when its pressed.
+
+There also could be python alternatives, but I tried couple of ways and found bash one most simple and useful. However, you gonna need to install some required packages:
+
+    aptitude update
+    aptitude install wiringpi heirloom-mailx
+
+And here's the script source:
 
     #!/bin/bash
 
@@ -54,3 +61,11 @@ One probably gonna use it like this:
     screen -dmS button bash /opt/button.sh run /opt/button_action.sh
 
 Notice, this was tested with sleep ver 8.13, older versions could not support float.
+
+Later Gmail refused to accept letters (yes, I use this button to send some notifications) from my Pi, so I installed Postfix and configured it to use my mail mail host as relay:
+
+    # /etc/postfix/main.cf
+
+    relayhost = mail.mydomain.com
+
+Of course, you should NOT set up an open relay.
