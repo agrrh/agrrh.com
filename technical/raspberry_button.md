@@ -4,41 +4,53 @@ Tags: raspberry pi, gpio
 
 I managed to attach a button to simple Raspberry PI case and here's the script to read it's state:
 
-    # as 'root' user
+  #!/bin/bash
 
-    #!/bin/bash
+  function read_gpio()
+  {
+    local result=$[1 - $(gpio -g read 8)]
+    echo $result
+  }
 
-    ## Author: Kirill K
-    ## Description: Script to handle big red button, returns 0 for idle or 1 for pressed state
-    ## Usage: button.sh prepare; button.sh
+  function reset_gpio()
+  {
+    gpio -g mode 7 out
+    gpio -g mode 8 in
 
-    if [ $1 == "prepare" ]; then
-        # prepare out
-        if [ ! -d /sys/class/gpio/gpio7 ]; then
-            echo 7 > /sys/class/gpio/export
-        fi
-        echo 1 > /sys/class/gpio/gpio7/value
+    gpio -g write 7 0
+    gpio -g write 8 1
+  }
 
-        # prepare in
-        if [ ! -d /sys/class/gpio/gpio8 ]; then
-            echo 8 > /sys/class/gpio/export
-        fi
-        echo 0 > /sys/class/gpio/gpio8/value
-    else
-        cat /sys/class/gpio/gpio8/value
+  reset_gpio
+
+  if [[ "$1" == "read" ]]; then
+    read_gpio
+  fi
+
+  if [[ "$1" == "run" ]]; then
+    if [ ! -f "$2" ]; then
+      echo "Could not find script file: \"$2\""
+      exit 1
     fi
+
+    echo "started" 1>&2
+
+    VAL=0
+
+    while [ true ]; do
+      PREV_VAL=$VAL
+      VAL=$(read_gpio)
+      if [ "$PREV_VAL" -eq "0" ] && [ "$VAL" -eq "1" ]; then
+        echo "triggered" 1>&2
+        bash $2
+      fi
+      sleep 0.2
+    done
+  fi
 
 One probably gonna use it like this:
 
     # /etc/rc.local
-    bash /opt/button.sh prepare
-    while [ true ]; do
-        if [ "$(bash /opt/button.sh get)" == "1" ]; then
-            # do something
-        fi
-        sleep 0.5
-    done
+    screen -dmS button bash /opt/button.sh run /opt/button_action.sh
 
-Tested with sleep ver 8.13, older versions could not support float.
-
-Also, consider some trigger delay handling here, you don't want to send 3 alarm emails for 1.5 sec button press, right?
+Notice, this was tested with sleep ver 8.13, older versions could not support float.
