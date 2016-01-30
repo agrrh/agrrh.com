@@ -39,41 +39,48 @@ From 1.5 to 3 thousands of issues were resolved every month at the positions of 
 
 ### Technologies familiar with
 
-Bash, Python, Perl
+All ordered from well-known to rarely used.
 
-Nginx - reverse-proxy, SSL, balancing, php-fpm, Flask
+Python, Bash, Perl
+
+Debian, Ubuntu, Centos
+
+Nginx - reverse-proxy, SSL, balancing, php-fpm
 
 Apache - mostly PHP+MySQL sites, also SSL
 
-HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2
+HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2 and Flask
 
-MySQL - replication, also SQLite
+MySQL (replication), SQLite, Redis, MongoDB
 
 Haproxy - balancing, routing rules
 
-Ansible, also lot of Salt/Chef
+Ansible, Salt, Chef
 
 Teamcity, Jenkins, Travis CI
 
 Munin, Zabbix, Graphite
 
-Debian, Ubuntu, Centos
-
-OpenVZ, ESXi
+OpenVZ, Docker, Virtualbox
 
 Software RAID, mdadm
 
 Adaptec, 3ware, LSI hardware RAID controllers
 
+dnsmasq, OpenVPN, TOR, lot of simple routing
+
 ---
 
 ### Experience
 
-#### System Administrator (DevOps) at e4e5group (2015 - current)
+#### System Administrator (DevOps) at e4e5group (2015 - 2015)
 
 [e4e5group](http://e4e5group.ru/) 
 
 - Deploy CI system over the existing infrastructure
+- Writing Ansible playbooks to manipulate sets of virtual boxes and setting up various Erlang services.
+
+Unfortunately, company has been closed due to business reasons.
 
 #### System Administrator at Yandex (2014 - 2015)
 
@@ -83,7 +90,9 @@ Adaptec, 3ware, LSI hardware RAID controllers
 - Actively participated at the migration from Salt to Ansible
 - Deep co-working with developers to resolve any deploy-related issue
 - Monitoring of 600+ hosts, virtual and real
-- Fault disks replaces, DNS zone control, escalation of network problems
+- Faulty disks replacements, DNS zone control, escalation of network problems
+
+Quit cause of poor internal communications.
 
 #### Head of Technical Support department at FastVPS (2012-2014)
 
@@ -106,6 +115,8 @@ As head of department:
 - Represented the company at the thematics forum
 - Interviewing applicants
 - Compiling working schedule, vacations
+
+Quit due to reaching upper limit for this position.
 
 #### Technical Support specialist at Yota (2012-2012)
 
