@@ -51,7 +51,7 @@ Apache - mostly PHP+MySQL sites, also SSL
 
 HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2 and Flask
 
-MySQL (replication), SQLite, Redis, MongoDB
+MySQL (replication), SQLite, Redis, MongoDB, ZooKeeper
 
 Haproxy - balancing, routing rules
 
@@ -72,6 +72,17 @@ dnsmasq, OpenVPN, TOR, lot of simple routing
 ---
 
 ### Experience
+
+#### Project Technical Leader at FastVPS (2016 - current)
+
+[FastVPS](http://fastvps.ru/) is a Hosting Provider with data-center in Estonia
+
+- Planning and developing a monitoring-based service
+- Produce project technical requrements and human-readable standards
+- Build infrastructure from the zero to production-ready state
+- Interview apllicants
+- High responsibility level
+- Work as a single-man-department at the early stages
 
 #### System Administrator (DevOps) at e4e5group (2015 - 2015)
 
@@ -106,7 +117,7 @@ As technical support specialist:
 
 - Deploy of software on bare-metal servers
 - Hotfixing software issues
-- Diagnosing and replacing hardware on client's request (remote basis)
+- Diagnosing and replacing hardware on clients request (remote basis)
 - Almost any task client could ask to do
 
 As head of department:
