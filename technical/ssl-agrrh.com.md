@@ -30,3 +30,15 @@ And, of course, Nginx config is extra clean and friendly:
     }
 
 Don't forget to restart and enjoy the green SSL sign in the address bar. :)
+
+Afterwards just renew it once in a 3-4 months like this:
+
+```bash
+/etc/init.d/nginx stop
+
+./letsencrypt-auto renew
+
+# increment number in nginx config after fullchain and privkey by 1
+
+/etc/init.d/nginx start
+```
