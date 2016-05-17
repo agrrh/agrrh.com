@@ -62,7 +62,7 @@ One probably gonna use it like this:
 
 Notice, this was tested with sleep ver 8.13, older versions could not support float.
 
-Later Gmail refused to accept letters (yes, I use this button to send some notifications) from my Pi, so I installed Postfix and configured it to use my mail mail host as relay:
+Later Gmail refused to accept letters (yes, I use this button to send some notifications) from my Pi, so I installed Postfix and configured it to use my maili host as relay:
 
     # /etc/postfix/main.cf
 
