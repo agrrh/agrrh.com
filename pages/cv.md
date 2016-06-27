@@ -1,6 +1,6 @@
 Title: CV
 Date: 2015-07-17 15:00
-Modified: 2015-07-20 19:40
+Modified: 2016-07-27 03:20
 
 ## Kirill Alexandrovich Kovalev
 ### DevOps, IT specialist, Saint-Petersburg, Russian Federation
@@ -14,7 +14,7 @@ Modified: 2015-07-20 19:40
 
 ### Profile
 
-Internet technology specialist with an in corporate, media and institutional IT infrastructure from ~2010.
+Internet technology specialist with experience in corporate, media and institutional IT infrastructure from ~2010.
 
 Occasionally work as a freelancer since 2009. Relatively deep dive into Linux world occured at ~2012.
 
