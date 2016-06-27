@@ -14,11 +14,11 @@ Modified: 2015-07-20 19:40
 
 ### Profile
 
-Internet technology specialist with an experience of 6 years in corporate, media and institutional IT infrastructure.
+Internet technology specialist with an in corporate, media and institutional IT infrastructure from ~2010.
 
-Partially working as a freelancer since 2009. Relatively deep dive into Linux world occured at ~2012.
+Occasionally work as a freelancer since 2009. Relatively deep dive into Linux world occured at ~2012.
 
-Can easily deploy a server, configure a load balancer, automate IT department boring routines.
+Can easily deploy a server, configure a load balancer, automate IT department boring routines while drinking a cup of coffee.
 
 Non-smoker.
 
@@ -27,13 +27,13 @@ Non-smoker.
 ### Professional skills
 
 #### System Administrator
-Best familiar with Debian-like distros. Detected and replaced dozens of faulty hard disks. Developed few light-weight monitoring systems to keep hand on pulse of company's (or client's) infrastructure.
+Mostly familiar with Debian-based distros. Detected and replaced dozens of faulty hardware items. Developed few light-weight distributed monitoring systems to keep hand on pulse of company (or client) infrastructure.
 
 #### DevOps
-Сontinuous integration with TeamCity or Jenkins, also Travis. Sadly almost got no experience as QA.
+Experienced with Ansible as deploy engineer. Сontinuous integration with TeamCity (also Jenkins and Travis).
 
 #### Technical support
-From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
+Very friendly. From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
 
 ---
 
@@ -51,7 +51,7 @@ Apache - mostly PHP+MySQL sites, also SSL
 
 HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2 and Flask
 
-MySQL (replication), SQLite, Redis, MongoDB, ZooKeeper
+RethinkDB, ZooKeeper, MySQL (replication), SQLite, MongoDB, Redis
 
 Haproxy - balancing, routing rules
 
@@ -61,32 +61,31 @@ Teamcity, Jenkins, Travis CI
 
 Munin, Zabbix, Graphite
 
-OpenVZ, Docker, Virtualbox
+Docker, OpenVZ, Virtualbox
 
 Software RAID, mdadm
 
 Adaptec, 3ware, LSI hardware RAID controllers
 
-dnsmasq, OpenVPN, TOR, lot of simple routing
+dnsmasq, OpenVPN, TOR, etc
 
 ---
 
 ### Experience
 
-#### Project Technical Leader at FastVPS (2016 - current)
+#### Project Technical Lead at FastVPS (2016 - current)
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-center in Estonia
 
-- Planning and developing a monitoring-based service
-- Produce project technical requrements and human-readable standards
+- Planning and developing distributed monitoring service
+- Form project's technical requirements and descriptions (in a human-readable format too)
 - Build infrastructure from the zero to production-ready state
 - Interview apllicants
 - High responsibility level
-- Work as a single-man-department at the early stages
 
 #### System Administrator (DevOps) at e4e5group (2015 - 2015)
 
-[e4e5group](http://e4e5group.ru/) 
+[e4e5group](http://e4e5group.ru/)
 
 - Deploy CI system over the existing infrastructure
 - Writing Ansible playbooks to manipulate sets of virtual boxes and setting up various Erlang services.
@@ -159,9 +158,8 @@ Quit due to reaching upper limit for this position.
 
 ### Hobbies
 
-- Watching dramatic movies
-- Dreaming about other planets colonization
-- Doing some weekend IT-related projects
-- Bad music writing
+- Cinema
+- Space
+- Weekend IT-related projects
 
 ---
