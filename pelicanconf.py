@@ -16,7 +16,7 @@ TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = 'en'
 
-THEME = './pelican-bootstrap3'
+THEME = './pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'yeti'
 PYGMENTS_STYLE = 'solarizedlight'
 
@@ -34,7 +34,7 @@ TAG_CLOUD_MAX_ITEMS = 10
 DISPLAY_TAGS_INLINE = True
 TAGS_URL = 'tags.html'
 
-PLUGIN_PATHS = ["/opt/pelican-plugins"]
+PLUGIN_PATHS = ["./plugins"]
 PLUGINS = ["tag_cloud"]
 
 # Blogroll
