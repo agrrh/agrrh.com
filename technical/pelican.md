@@ -53,12 +53,11 @@ This is when you are ready to run the build command, `pelican` will create the `
 
 ## Deploy
 
-The simplest deploy script could look like this one:
+The simplest deploy script could look like this one (don't forget to manually clone the repo to the `${PATH_BASE}/${PATH_RAW}` for the first time):
 
 ```bash
 #!/bin/bash
 
-REPO=https://github.com/login/example.org.git
 PATH_BASE=/var/www/example.org
 PATH_RAW=source
 
@@ -76,7 +75,9 @@ service nginx reload
 
 ## Customizing the view
 
-Feel free to edit the theme static files. For example, I did so to enable on-click zoomig for images:
+Feel free to edit the theme static files. For example, I did so to enable on-click zoomig for images.
+
+First, let's tell the browser, that images with `alt=preview` property should be treated as thumbnails. We want to make them small:
 
 **./pelican-themes/pelican-bootstrap3/static/css/style.css**
 
@@ -86,6 +87,8 @@ img[alt=preview] {
     cursor: pointer;
 }
 ```
+
+Now telling browser to toggle full-width property for specific elements on click:
 
 **./pelican-themes/pelican-bootstrap3/static/js/custom.js**
 
@@ -99,6 +102,8 @@ $(document).ready(function(){
  });
 ```
 
+Enabling JavaScript by adding it to the page:
+
 **./pelican-themes/pelican-bootstrap3/templates/base.html**
 
 ```html
@@ -110,3 +115,5 @@ Then I'm just marking the images with "preview" tag:
 ```markdown
 ![preview]({filename}/media/photo.jpg)
 ```
+
+And voila! You can resize image to full width available by clicking on them.
