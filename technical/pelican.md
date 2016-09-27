@@ -73,6 +73,8 @@ chown -Rf nginx: ${PATH_BASE}
 service nginx reload
 ```
 
+You could save this as Git `post-update` hook or something.
+
 ## Customizing the view
 
 Feel free to edit the theme static files. For example, I did so to enable on-click zoomig for images.
