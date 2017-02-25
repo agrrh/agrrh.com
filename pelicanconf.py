@@ -7,7 +7,7 @@ SITENAME = 'Keep It Simple, Sir!'
 SITEURL = 'https://agrrh.com'
 
 PATH = './'
-STATIC_PATHS = ['pages', 'downloads', 'media', 'extra']
+STATIC_PATHS = ['pages', 'downloads', 'media', 'extra', 'errors']
 EXTRA_PATH_METADATA = {
   'extra/favicon.ico': {'path': 'favicon.ico'}
 }
