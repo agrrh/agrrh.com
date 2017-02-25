@@ -37,7 +37,7 @@ DISPLAY_TAGS_INLINE = True
 TAGS_URL = 'tags.html'
 
 PLUGIN_PATHS = ["./plugins"]
-PLUGINS = ['tag_cloud', 'i18n_subsites', 'disqus_static']
+PLUGINS = ['tag_cloud', 'i18n_subsites']
 
 # Blogroll
 LINKS = (
