@@ -48,8 +48,8 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('VK', 'https://vk.com/agrrh'),
-    ('GitHub', 'https://github.com/agrrh'),
+    ('vk.com/agrrh', 'https://vk.com/agrrh'),
+    ('github.com/agrrh', 'https://github.com/agrrh'),
 )
 
 DEFAULT_PAGINATION = 15
