@@ -12,8 +12,8 @@ EXTRA_PATH_METADATA = {
   'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 ARTICLE_PATHS = ['personal', 'technical', 'projects']
+ARTICLE_URL = '{date:%Y}/{slug}'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 TIMEZONE = 'Europe/Moscow'
 
@@ -60,4 +60,3 @@ RELATIVE_URLS = False
 
 # https://github.com/getpelican/pelican-themes/issues/460
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-
