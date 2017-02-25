@@ -56,3 +56,7 @@ DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# https://github.com/getpelican/pelican-themes/issues/460
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
