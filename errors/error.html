@@ -1,29 +1,17 @@
 <html>
   <head>
-    <style>
-    #background {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      left: 0px;
-      top: 0px;
-      z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
-    }
-
-    .stretch {
-      width:100%;
-      height:100%;
-    }
-    </style>
+    <link href="/errors/error_page.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Something is broken ;(</h1>
-    <p>You've just hit an error.</p>
-    <p>Probably 404 or 50x, nevermind.</p>
-    <p>In case of 50x, tech guy will see it in logs and would try to fix ASAP.</p>
-    <p>You could try to find desired page in Google's cache, if it's urgent.</p>
-    <p>Don't be upset, this is just a site. :)</p>
+    <div class="message">
+      <h1>Something is broken ;(</h1>
+      <p>You've just hit an error.</p>
+      <p>Probably 404 or 50x, nevermind.</p>
+      <p>In case of 50x, tech guy will see it in logs and would try to fix ASAP.</p>
+      <p>You could try to find desired page in Google's cache, if it's urgent.</p>
+      <p>Don't be upset, this is just a site. :)</p>
+    </div>
 
     <div id="background"><img src="/errors/bg.jpg" class="stretch" alt=""></div>
   </body>
