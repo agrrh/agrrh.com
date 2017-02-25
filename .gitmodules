@@ -4,4 +4,4 @@
 [submodule "themes"]
 	path = themes
 	url = git@github.com:agrrh/pelican-themes.git
-	branch = Fix-for-issue-460
+	branch = Fix-for-issue-460-dup
