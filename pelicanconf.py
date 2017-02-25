@@ -7,7 +7,10 @@ SITENAME = 'Keep It Simple, Sir!'
 SITEURL = 'https://agrrh.com'
 
 PATH = './'
-STATIC_PATHS = ['pages', 'downloads', 'media']
+STATIC_PATHS = ['pages', 'downloads', 'media', 'extra']
+EXTRA_PATH_METADATA = {
+  'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 ARTICLE_PATHS = ['personal', 'technical', 'projects']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
