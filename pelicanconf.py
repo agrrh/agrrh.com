@@ -30,7 +30,7 @@ AUTHOR_FEED_RSS = None
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_TAGS_ON_SIDEBAR = True
 
-DISQUS_SITENAME = 'agrrh.com'
+DISQUS_SITENAME = 'agrrh-com'
 DISQUS_PUBLIC_KEY = 'dgDf7227PBnxTTjAJtFRh9EUVQPSuNHosQFlwRjvZA2YQ23wbmXtNlLqnl5Wg3f0'
 DISQUS_SECRET_KEY = str(open('./.disqus_api_secret', 'r').read()).strip()
 
