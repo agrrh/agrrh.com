@@ -66,3 +66,5 @@ RELATIVE_URLS = False
 
 # https://github.com/getpelican/pelican-themes/issues/460
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
+DELETE_OUTPUT_DIRECTORY = True
