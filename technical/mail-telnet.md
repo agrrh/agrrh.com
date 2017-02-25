@@ -2,28 +2,46 @@ Title: Email via telnet
 Date: 2015-07-17 12:38
 Tags: telnet, mail
 
-Here's a brief recipe on how to send email with just a bare telnet.
+Просто быстрый способ (попытаться) отправить письмо через telnet. :)
 
-Establish a connection with mail server:
+Устанавливаем соединение:
 
-    telnet mail.example.org 25
+```bash
+telnet mail.example.org 25
+```
 
-Introduce yourself:
+Представляемся и указываем адреса*н*та:
 
-    HELO local.domain.com
-    MAIL FROM: yourname@domain.com
+```bash
+HELO local.domain.com
+MAIL FROM: yourname@domain.com
+```
 
-And tell who is the recipient:
+Указываем адресата:
 
-    RCPT TO: friend@otherdomain.com
+```bash
+RCPT TO: friend@otherdomain.com
+```
 
-Now form a message itself (last dot commits message end):
+Формируем сообщение:
 
-    DATA
-    SUBJECT: test
-    test
-    .
+```bash
+DATA
+SUBJECT: test
+test
+.
+```
 
-That's it. :)
+Точка в конце указывает на завершение сообщения.
 
-    QUIT
+Ну и все, завершаем сеанс:
+
+```bash
+QUIT
+```
+
+Оставляю здесь в память о так и не выполненном квесте, о котором рассказывал [nett00n](http://nett00n.org/) (могу сильно переврать детали, но суть передам):
+
+- Собрались как-то айтишники в кафе и устроили что-то типа соревнования, надо было написать на ящик письмо, получить в ответе ссылку, по ней взять креды и слить с FTP файлик с паролем. Кто первый - победил. Но вот прикол - использовать можно было только telnet.
+
+Если ты читаешь это - я готов! :)

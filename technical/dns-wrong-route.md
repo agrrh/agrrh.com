@@ -2,28 +2,37 @@ Title: Dig: reply from unexpected source
 Date: 2015-09-04 11:25
 Tags: dig, dns, routes
 
-Yesterday I tried to dig some hostname from local DNS server and got such result:
+Вчера пытался dig-ать некоторые имена с локального DNS и получал странный ответ:
 
-    $ dig domain.local.tld @10.0.20.1
-    ;; reply from unexpected source: 10.0.0.1#53, expected 10.0.20.1#53
+```plain
+$ dig domain.local.tld @10.0.20.1
+;; reply from unexpected source: 10.0.0.1#53, expected 10.0.20.1#53
+```
 
-First, let me explain network scheme:
+Чтобы пояснить решение, надо сначала пояснить условия, в которых эта ошибка была выбита:
 
-    (clients) --- router --- (inet)
-    dns       ---/
-    fileshare ---/
+```
+(inet) --- router --- dns host
+                 \--- (clients)
+```
 
-- Client is 10.0.99.1
-- DNS host is 10.0.20.1
-- router is 10.0.0.1
-- DNS default route os 10.0.0.1 and it - Clients default route is same 10.0.0.1
+- Клиенты живут в 10.0.99.0/24
+- DNS-хост живет по 10.0.20.1
+- Роутер живет по 10.0.0.1
+- Gateway по умолчанию на DNS и клиентах: 10.0.0.1
 
-The reason was quite simple:
+Итак, откуда растут ноги у проблемы (ну, очевидно, из маршрутизации):
 
-DNS got zero knowledge about 10.0.99.1/24 subnet and answered through 10.0.0.1, specifying it as source.
+- У DNS-хоста было ноль знания про 10.0.99.0/24 и он отвечал через 10.0.0.1
+- Запрашивающему ответ клиенту ответ таки приходил, но уже не с 10.0.20.1, а от 10.0.0.1 (не удивлюсь, если оно там еще и маскарадилось)
 
-The solution was just:
+И, таким образом, решается косяк просто:
 
-    root@dns # ip r add 10.0.99.1/24 dev eth0 src 10.0.20.1
+```bash
+# DNS host
+ip r add 10.0.99.1/24 dev eth0 src 10.0.20.1
+```
 
-Then I was able to dig local addresses again.
+После этого DNS понимал, что к клиентам надо ходить вот туда и проблема ушла.
+
+Вообще, это больше история про то, как не надо устраивать офисную сеть.
