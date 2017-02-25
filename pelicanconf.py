@@ -6,7 +6,7 @@ AUTHOR = 'agrrh'
 SITENAME = 'Keep It Simple'
 SITEURL = ''
 
-PATH = 'content'
+PATH = './'
 STATIC_PATHS = ['pages', 'downloads', 'media']
 ARTICLE_PATHS = ['personal', 'technical', 'projects']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
@@ -16,7 +16,7 @@ TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = 'en'
 
-THEME = './pelican-themes/pelican-bootstrap3'
+THEME = './themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'yeti'
 PYGMENTS_STYLE = 'solarizedlight'
 
