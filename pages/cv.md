@@ -2,17 +2,15 @@ Title: CV
 Date: 2015-07-17 15:00
 Modified: 2016-07-27 03:20
 
-## Kirill Alexandrovich Kovalev
-### DevOps, IT specialist, Saint-Petersburg, Russian Federation
+# Kirill Alexandrovich Kovalev
+## DevOps, IT specialist, Saint-Petersburg, Russian Federation
 
-#### Contact
+### Contact
 - Mail: [kovalev.kirill.a@gmail.com](mailto:kovalev.kirill.a@gmail.com)
 - Site: [http://agrrh.com](http://agrrh.com/)
 - Github: [https://github.com/agrrh](https://github.com/agrrh)
 
----
-
-### Profile
+## Profile
 
 Internet technology specialist with experience in corporate, media and institutional IT infrastructure from ~2010.
 
@@ -22,22 +20,18 @@ Can easily deploy a server, configure a load balancer, automate IT department bo
 
 Non-smoker.
 
----
+## Professional skills
 
-### Professional skills
-
-#### System Administrator
+### System Administrator
 Mostly familiar with Debian-based distros. Detected and replaced dozens of faulty hardware items. Developed few light-weight distributed monitoring systems to keep hand on pulse of company (or client) infrastructure.
 
-#### DevOps
+### DevOps
 Experienced with Ansible as deploy engineer. Сontinuous integration with TeamCity (also Jenkins and Travis).
 
-#### Technical support
+### Technical support
 Very friendly. From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
 
----
-
-### Technologies familiar with
+## Technologies familiar with
 
 All ordered from well-known to rarely used.
 
@@ -69,11 +63,9 @@ Adaptec, 3ware, LSI hardware RAID controllers
 
 dnsmasq, OpenVPN, TOR, etc
 
----
+## Experience
 
-### Experience
-
-#### Project Technical Lead at FastVPS (2016 - current)
+### Project Technical Lead at FastVPS (2016 - current)
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-center in Estonia
 
@@ -83,7 +75,7 @@ dnsmasq, OpenVPN, TOR, etc
 - Interview apllicants
 - High responsibility level
 
-#### System Administrator (DevOps) at e4e5group (2015 - 2015)
+### System Administrator (DevOps) at e4e5group (2015 - 2015)
 
 [e4e5group](http://e4e5group.ru/)
 
@@ -92,7 +84,7 @@ dnsmasq, OpenVPN, TOR, etc
 
 Unfortunately, company has been closed due to business reasons.
 
-#### System Administrator at Yandex (2014 - 2015)
+### System Administrator at Yandex (2014 - 2015)
 
 [Yandex](http://www.yandex.ru/) is lead Russian Federation web-search engine.
 
@@ -104,7 +96,7 @@ Unfortunately, company has been closed due to business reasons.
 
 Quit cause of poor internal communications.
 
-#### Head of Technical Support department at FastVPS (2012-2014)
+### Head of Technical Support department at FastVPS (2012-2014)
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-centers at Estonia and Germany.
 
@@ -128,13 +120,11 @@ As head of department:
 
 Quit due to reaching upper limit for this position.
 
-#### Technical Support specialist at Yota (2012-2012)
+### Technical Support specialist at Yota (2012-2012)
 
-#### Technical Support specialist at local ISP (~2011)
+### Technical Support specialist at local ISP (~2011)
 
----
-
-### Projects participated
+## Projects participated
 
 - [Synergy](http://synergy-project.org/), software IP-KVM (2015)
     - Localization, PR article
@@ -142,24 +132,18 @@ Quit due to reaching upper limit for this position.
     - Integrated server monitoring scripts in PHP
     - Wrote few gaming-related articles
 
----
-
-### Education
+## Education
 
 - __2009 - 2011__: IT in Education specialist, Herzen University
 - __2007 - 2009__: Physics and Optics specialist, ITMO University
 
----
-
-### Languages
+## Languages
 
 - Russian - mother language
 - English - huge reading and writing experience, but lacks live communications
 
-### Hobbies
+## Hobbies
 
 - Cinema
 - Space
 - Weekend IT-related projects
-
----
