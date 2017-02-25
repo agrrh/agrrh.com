@@ -1,0 +1,33 @@
+agrrh.com {
+  git github.com/agrrh/agrrh.com {
+    path ../agrrh.com-src
+    args --recursive --depth 1
+    hook /github-push ThisIsAwesome
+    then_long pelican -o ../agrrh.com .
+  }
+
+  root /var/www/agrrh.com
+  log /var/log/caddy/agrrh.com.access.log {
+    rotate {
+      size 100
+      age 7
+      keep 10
+    }
+  }
+  errors {
+    log /var/log/caddy/agrrh.com.errors.log {
+      size 100
+      age  7
+      keep 10
+    }
+    * errors/error.html
+  }
+
+  gzip
+  minify /theme/js /theme/css
+  expires {
+    match .(css|js|png|jp(e)?g)$ 7d
+  }
+
+  ext .html .htm
+}
