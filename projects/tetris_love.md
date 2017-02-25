@@ -5,7 +5,6 @@ Tags: lua, love2d, games
 Simple Tetris implementation, written in LUA with Love2d framework.
 
 [ [GitHub](https://github.com/agrrh/love_tetris) ]
-[ [tetris.love]({filename}/downloads/tetris.love) ]
 
 ![preview]({filename}/media/tetris-love-showoff.png)
 

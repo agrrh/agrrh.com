@@ -5,7 +5,6 @@ Tags: lua, love2d, games
 One more simple game reimplementation, now it's the Snake implementation (called Python in "Learning C for beginners" book, where I saw it for the first time at age ~7). Again LUA and Love2d.
 
 [ [GitHub](https://github.com/agrrh/love_snake) ]
-[ [snake.love]({filename}/downloads/snake.love) ]
 
 ![preview]({filename}/media/snake-love-showoff.png)
 
