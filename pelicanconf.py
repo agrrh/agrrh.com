@@ -14,6 +14,12 @@ EXTRA_PATH_METADATA = {
 ARTICLE_PATHS = ['personal', 'technical', 'projects']
 ARTICLE_URL = '{date:%Y}/{slug}'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+PAGE_URL = 'pages/{slug}'
+PAGE_SAVE_AS = 'pages/{slug}.html'
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
+TAG_URL = 'tag/{slug}'
+TAG_SAVE_AS = 'tag/{slug}.html'
 
 TIMEZONE = 'Europe/Moscow'
 
