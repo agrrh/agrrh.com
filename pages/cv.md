@@ -1,6 +1,6 @@
 Title: CV
 Date: 2015-07-17 15:00
-Modified: 2016-07-27 03:20
+Modified: 2017-04-21 03:59
 
 # Kirill Alexandrovich Kovalev
 ## DevOps, IT specialist, Saint-Petersburg, Russian Federation
@@ -16,17 +16,17 @@ Internet technology specialist with experience in corporate, media and instituti
 
 Occasionally work as a freelancer since 2009. Relatively deep dive into Linux world occured at ~2012.
 
-Can easily deploy a server, configure a load balancer, automate IT department boring routines while drinking a cup of coffee.
+Can easily deploy a server, configure a load balancer, automate IT department boring routines while drinking a cup of tea.
 
 Non-smoker.
 
 ## Professional skills
 
 ### System Administrator
-Mostly familiar with Debian-based distros. Detected and replaced dozens of faulty hardware items. Developed few light-weight distributed monitoring systems to keep hand on pulse of company (or client) infrastructure.
+Mostly familiar with Debian-based distros. Detected and replaced hundreds of faulty hardware items. Developed few light-weight distributed monitoring systems to keep hand on pulse of company (or client) infrastructure.
 
 ### DevOps
-Experienced with Ansible as deploy engineer. Сontinuous integration with TeamCity (also Jenkins and Travis).
+Experienced with Ansible as deploy engineer. Сontinuous integration with TeamCity (also Jenkins).
 
 ### Technical support
 Very friendly. From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
@@ -35,52 +35,84 @@ Very friendly. From 1.5 to 3 thousands of issues were resolved every month at th
 
 All ordered from well-known to rarely used.
 
-Python, Bash, Perl
+-   **Languages**: Python, Bash, Perl
 
-Debian, Ubuntu, Centos
+-   **OS**: Debian since 6, Ubuntu since 14.04, a little bit of CentOS 6/7
 
-Nginx - reverse-proxy, SSL, balancing, php-fpm
+-   **Web**:
 
-Apache - mostly PHP+MySQL sites, also SSL
+    Nginx: reverse-proxy, TLS, balancing, php-fpm, maps
+    Apache: PHP+MySQL sites, TLS,
+    Caddy: using as personal site platform
+    HTML, CSS, PHP, JavaScript: building web interfaces with Bootstrap, Jinja2 and Flask
 
-HTML, CSS, PHP, JavaScript - Building web interfaces with Bootstrap, Jinja2 and Flask
+-   **Databases**: Redis, MongoDB, InfluxDB, MySQL, XtraDB cluster, SQLite, RethinkDB, ZooKeeper
 
-RethinkDB, ZooKeeper, MySQL (replication), SQLite, MongoDB, Redis
+-   **Balancing**: Haproxy, ~200k RPS to 50+ workers
 
-Haproxy - balancing, routing rules
+-   **Config Management**:
 
-Ansible, Salt, Chef
+    Ansible - hosts and services setup, apps deploy, dynamic inventories
+    Salt, Chef - editing existing recipes
 
-Teamcity, Jenkins, Travis CI
+-   **CI/CD**:
 
-Munin, Zabbix, Graphite
+    Teamcity, Jenkins - agents setup, deploy tasks writing, administration, resolving issues
+    Travis CI - couple of simple deploy scenarios for private projects
 
-Docker, OpenVZ, Virtualbox
+-   **Monitoring**:
 
-Software RAID, mdadm
+    TICK stack - setup from scratch, full infrastructure and services monitoring
+    ELK stack - logs aggregation
+    Munin - basic monitoring while there's no more complex solutions
+    Zabbix - editing existing alert policies
 
-Adaptec, 3ware, LSI hardware RAID controllers
+-   **Virtualization**:
 
-dnsmasq, OpenVPN, TOR, etc
+    Docker - apps deploy,
+    OpenVZ - used until 2015 as main
+    Virtualbox - as simple solution for persistent setups
+
+-   **RAID**:
+
+    software: mdadm, btrfs
+    hardware: Adaptec, 3ware, LSI
+
+-   **Misc**: dnsmasq, OpenVPN, TOR, etc
 
 ## Experience
 
-### Project Technical Lead at FastVPS (2016 - current)
+### System Administrator (DevOps) at Roxot (2016 - 2017)
+
+[Roxot](http://roxot.com/) is an Advertising network
+
+- Entered company as first operations engineer
+- Built and maintained staging and production infrastructure of ~300 virtual hosts
+- Built monitoring system with TICK (InfluxDB) stack and logs aggregation with ELK stack
+- Almost every host, service and project was covered with Ansible code
+- Wrote API to manage local fake domain zone
+- Was deeply integrated into development team
+- Acted as helpdesk specialist for most of colleagues
+
+Quit cause of reaching company tech ceiling.
+
+### Project Technical Lead at FastVPS (2016)
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-center in Estonia
 
-- Planning and developing distributed monitoring service
-- Form project's technical requirements and descriptions (in a human-readable format too)
+- Developed distributed monitoring service based on RethinkDB, RabbitMQ and local Python agent daemons and alerts detection
+- Form project's technical and business requirements and descriptions
 - Build infrastructure from the zero to production-ready state
-- Interview apllicants
-- High responsibility level
+- Performed few load testings to prove ability to serve up to 10-50k clients
+
+Sadly, project was never released.
 
 ### System Administrator (DevOps) at e4e5group (2015 - 2015)
 
 [e4e5group](http://e4e5group.ru/)
 
 - Deploy CI system over the existing infrastructure
-- Writing Ansible playbooks to manipulate sets of virtual boxes and setting up various Erlang services.
+- Wrote Ansible playbooks to manipulate sets of virtual boxes and setting up various Erlang services
 
 Unfortunately, company has been closed due to business reasons.
 
