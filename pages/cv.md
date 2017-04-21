@@ -41,12 +41,10 @@ All ordered from well-known to rarely used.
 
 -   **Web**:
 
-    ```text
-    Nginx: reverse-proxy, TLS, balancing, php-fpm, maps
-    Apache: PHP+MySQL sites, TLS,
-    Caddy: using as personal site platform
-    HTML, CSS, PHP, JavaScript: building web interfaces with Bootstrap, Jinja2 and Flask
-    ```
+    -   Nginx: reverse-proxy, TLS, balancing, php-fpm, maps
+    -   Apache: PHP+MySQL sites, TLS,
+    -   Caddy: using as personal site platform
+    -   HTML, CSS, PHP, JavaScript: building web interfaces with Bootstrap, Jinja2 and Flask
 
 -   **Databases**: Redis, MongoDB, InfluxDB, MySQL, XtraDB cluster, SQLite, RethinkDB, ZooKeeper
 
@@ -54,41 +52,31 @@ All ordered from well-known to rarely used.
 
 -   **Config Management**:
 
-    ```text
-    Ansible - hosts and services setup, apps deploy, dynamic inventories
-    Salt, Chef - editing existing recipes
-    ```
+    -   Ansible - hosts and services setup, apps deploy, dynamic inventories
+    -   Salt, Chef - editing existing recipes
 
 -   **CI/CD**:
 
-    ```text
-    Teamcity, Jenkins - agents setup, deploy tasks writing, administration, resolving issues
-    Travis CI - couple of simple deploy scenarios for private projects
-    ```
+    -   Teamcity, Jenkins - agents setup, deploy tasks writing, administration, resolving issues
+    -   Travis CI - couple of simple deploy scenarios for private projects
 
 -   **Monitoring**:
 
-    ```text
-    TICK stack - setup from scratch, full infrastructure and services monitoring
-    ELK stack - logs aggregation
-    Munin - basic monitoring while there's no more complex solutions
-    Zabbix - editing existing alert policies
-    ```
+    -   TICK stack - setup from scratch, full infrastructure and services monitoring
+    -   ELK stack - logs aggregation
+    -   Munin - basic monitoring while there's no more complex solutions
+    -   Zabbix - editing existing alert policies
 
 -   **Virtualization**:
 
-    ```text
-    Docker - apps deploy,
-    OpenVZ - used until 2015 as main
-    Virtualbox - as simple solution for persistent setups
-    ```
+    -   Docker - apps deploy,
+    -   OpenVZ - used until 2015 as main
+    -   Virtualbox - as simple solution for persistent setups
 
 -   **RAID**:
 
-    ```text
-    software: mdadm, btrfs
-    hardware: Adaptec, 3ware, LSI
-    ```
+    -   software: mdadm, btrfs
+    -   hardware: Adaptec, 3ware, LSI
 
 -   **Misc**: dnsmasq, OpenVPN, TOR, etc
 
