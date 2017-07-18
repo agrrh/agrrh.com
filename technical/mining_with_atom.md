@@ -8,7 +8,7 @@ Couple of days ago I noticed strange noise from my home gateway fans. The reason
 
 First, I just checked the source and decided that those processes were spawned by some Jenkins job. Sadly I got no time to investigate, so 8 hours later host was infested again, but I didn't knew it yet.
 
-Days later I finished my real life stuff and remembered about strange load. Then I went to check the logs, temperature graph, etc. Later I would know that my Jenkins web UI was exposed to the internet to let GitHub hooks start jobs and host got infested using this interface. As for now, I just moved it to secret location, unavailable without knowing direct link.
+Days later I finished my real life stuff and remembered about strange load. Then I went to check the logs, temperature graph, etc. Later I would know that my Jenkins web UI was exposed to the internet to let GitHub hooks start jobs and host got infested using this interface. As for now, I just fixed docker-related iptables rules to restrict access.
 
 And here comes the interesting part, see the investigation:
 
