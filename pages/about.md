@@ -1,7 +1,7 @@
 Title: About
-Date: 2015-07-17 10:58
+Date: 2017-08-04 14:36
 
-Hello!
+Hello there!
 
 ![preview]({filename}/media/photo.jpg)
 
@@ -16,7 +16,9 @@ Currently live in Saint-Petersburg, Russian Federation.
 My professional experience includes (from recent to older):
 
 - System administrator (DevOps)
+
 - Head of technical support department
+
 - Technical support specialist, ISP and Hosting
 
 See [CV page]({filename}cv.md) to know more in this perspective.
