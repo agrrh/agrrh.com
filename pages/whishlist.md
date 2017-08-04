@@ -23,4 +23,6 @@ This a wishlist, you could thank me for a good deeds by fulfilling (is it the co
 
 ## How to help?
 
-<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=gift%20from%20personal%20page&default-sum=100&button-text=12&yamoney-payment-type=on&button-size=m&button-color=orange&mail=on&successURL=http%3A%2F%2Fagrrh.com%2Fthanks&quickpay=small&account=410012208965804&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+Send some coins here:
+
+<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=gift%20from%20personal%20page&default-sum=100&button-text=12&yamoney-payment-type=on&button-size=m&button-color=orange&successURL=http%3A%2F%2Fagrrh.com%2Fthanks&quickpay=small&account=410012208965804&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
