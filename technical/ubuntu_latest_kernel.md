@@ -1,10 +1,10 @@
-Title: Ubuntu LTS: Install latest kernel
+Title: Ubuntu LTS: Use latest kernel
 Tags: ubuntu, kernel, hwe
 Date: 2017-07-25 17:21
 
 I was using Ubuntu 16.04 LTS with it's default 4.4 kernel and would like to test [BBR](https://github.com/google/bbr) congestion algorithm which available since 4.10 only.
 
-Solution is very simple due to [LTSEnablementStack/HWE](https://wiki.ubuntu.com/Kernel/LTSEnablementStack) feature.
+Solution is very simple due to [LTSEnablementStack/HWE](https://wiki.ubuntu.com/Kernel/LTSEnablementStack) feature. Can't say why, but this feature wasn't enabled at target host, probably it was installed too long ago, before HWE became default option.
 
 ```
 apt-get install --install-recommends linux-generic-hwe-16.04
