@@ -1,8 +1,8 @@
-Title: Mining via Atom processor
+Title: My Jenkins was hacked
 Date: 2017-07-18 07:44
 Tags: mining, hack, jenkins
 
-No, it is not about mining. :) The story is about infecting poor Atom-based gateway host with mining software through Jenkins web UI.
+The story is about infecting poor Atom-based gateway host with mining software through Jenkins web UI.
 
 Couple of days ago I noticed strange noise from my home gateway fans. The reason was all the 8 cores were 100% loaded with processes named `irq` and `irqbalanc1`.
 
@@ -133,4 +133,4 @@ I also thoght that it is possible to find wallet accepting address within binary
 
 Please let me know if you got ideas how to continue investigation.
 
-Update: After 24 hours head host was locked by hosting provider.
+Update: 24 hours after my abuse, header malware host was locked by it's hosting provider. Hoorray!
