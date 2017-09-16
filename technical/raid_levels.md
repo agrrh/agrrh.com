@@ -2,7 +2,7 @@ Title: RAID levels
 Date: 2017-09-16 15:10
 Tags: raid, data protection
 
-There was a time I was working in a small yet successful IT company VIST SPb. During those time I wrote an article about [RAID array levels](https://www.vist-spb.ru/articles/25-raid-massivy.html). Now let me repeat it here in english just to refresh this knowledge.
+There was a time I was working about a month or two in a small IT company VIST SPb. During those time I wrote an article about [RAID array levels](https://www.vist-spb.ru/articles/25-raid-massivy.html). Now let me repeat it here in english just to refresh this knowledge.
 
 So, RAID is acronym for "redundant array of independent disks". The main idea is to unite number of hardware storage items in one logical item. The algorithm of storing and distributing data across those hardware disks indicates the "RAID level".
 
@@ -21,16 +21,13 @@ Hardware RAID controllers almost always integrated in server-grade machines. I w
 
 In my practice, I faced HW controller failures few times and every time it was a huge pain attempting restore the data.
 
-So, let's talk about RAID levels now:
+So, let's talk about most popular RAID levels now:
 
 ## RAID 0
 
 This is just a number of disks, sharing sum of volumes capacity into single larger volume.
 
 ```
-2         4
-disks     disks
-
 ABCD         ABCD
 /  \       / |  | \
 A  B      A  B  C  D
@@ -44,9 +41,6 @@ You got increaced read/write speed, but, of course, you got no any data backup, 
 Is as simple as "mirroring", each of disks stores same data to prevent it's loss in case of single disk failure.
 
 ```
-2         4
-disks     disks
-
 ABCD         ABCD
 /  \       / |  | \
 A  A      A  A  A  A
@@ -77,7 +71,7 @@ A xor D xor C = B
 D xor B xor C = A
 ```
 
-It is always possible to obtain one of operands values using XOR while you know all the rest of operands.
+It is always possible to restore one of operands values using XOR while you know all the rest of operands. Total number of operands doesn't matter here.
 
 ## RAID 10
 
@@ -94,3 +88,5 @@ RAID 1    A  A  B  B
 ```
 
 It saves data until at least 1 disk in each pair is alive.
+
+I faced other RAID levels too rare in my career to describe them with competence trusty enough.
