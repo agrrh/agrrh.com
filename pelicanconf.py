@@ -11,7 +11,14 @@ STATIC_PATHS = ['pages', 'downloads', 'media', 'extra', 'errors']
 EXTRA_PATH_METADATA = {
   'extra/favicon.ico': {'path': 'favicon.ico'}
 }
-ARTICLE_PATHS = ['personal', 'technical', 'projects']
+
+ARTICLE_PATHS = [
+    'personal',
+    'technical',
+    'projects', # for small projects or single post announcements
+    'projects/kuzya'
+]
+
 ARTICLE_URL = '{date:%Y}/{slug}'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 PAGE_URL = 'pages/{slug}'
