@@ -16,7 +16,7 @@ ARTICLE_PATHS = [
     'personal',
     'technical',
     'projects', # for small projects or single post announcements
-    'projects/kuzya'
+    'kuzya',
 ]
 
 ARTICLE_URL = '{date:%Y}/{slug}'
@@ -58,6 +58,7 @@ PLUGINS = ['tag_cloud', 'i18n_subsites']
 # Blogroll
 LINKS = (
     ('Pelican', 'http://getpelican.com/'),
+    ('Caddy', 'https://caddyserver.com/')
 )
 
 # Social widget
