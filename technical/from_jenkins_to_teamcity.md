@@ -31,12 +31,13 @@ Then we need agents (almost same as Jenkins agents or GitLab runners), at lease 
 DOCKER_BRIDGE_IP=172.17.0.1
 
 # Same values
+#   don't enter them again, just keep in mind that those are the same
 LOCAL_DATA_DIR=/opt/docker_data/
 TEAMCITY_PORT=8111
 
 for i in 1; do
   docker run -d --name teamcity-agent${i} --restart=always \
-    -e SERVER_URL="http://${DOCKER_BRIDGE_IP}:8111/" \
+    -e SERVER_URL="http://${DOCKER_BRIDGE_IP}:${TEAMCITY_PORT}/" \
     -v ${LOCAL_DATA_DIR}/teamcity-agent${i}:/data/teamcity_agent/conf \
     jetbrains/teamcity-agent
 done
@@ -57,7 +58,7 @@ teamcity.example.org {
   }
 
   basicauth / login password
-  # or use ipfilter here
+  # or use ipfilter module here
 
   log /var/log/caddy/teamcity.example.org.access.log {
     rotate_size 100
