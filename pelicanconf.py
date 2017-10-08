@@ -16,7 +16,6 @@ ARTICLE_PATHS = [
     'personal',
     'technical',
     'projects', # for small projects or single post announcements
-    'kuzya',
 ]
 
 ARTICLE_URL = '{date:%Y}/{slug}'
