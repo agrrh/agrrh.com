@@ -14,6 +14,7 @@ EXTRA_PATH_METADATA = {
 
 ARTICLE_PATHS = [
     'personal',
+    'movies',
     'technical',
     'projects', # for small projects or single post announcements
 ]
@@ -52,7 +53,11 @@ DISPLAY_TAGS_INLINE = True
 TAGS_URL = 'tags.html'
 
 PLUGIN_PATHS = ["./plugins"]
-PLUGINS = ['tag_cloud', 'i18n_subsites']
+PLUGINS = [
+    'tag_cloud',
+    'i18n_subsites',
+    'pelican-youtube'
+]
 
 # Blogroll
 LINKS = (
