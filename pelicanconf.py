@@ -70,6 +70,15 @@ PLUGINS = [
     'pelican_youtube'
 ]
 
+MARKDOWN = {
+    'extension_configs': {
+        'mdx_video': {},
+        'mdx_titlecase': {}
+    },
+    'output_format': 'html5'
+}
+TYPOGRIFY = True
+
 # Blogroll
 LINKS = (
     ('Pelican', 'http://getpelican.com/'),
