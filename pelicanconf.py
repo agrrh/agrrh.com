@@ -66,14 +66,12 @@ TAGS_URL = 'tags.html'
 PLUGIN_PATHS = ["./plugins"]
 PLUGINS = [
     'tag_cloud',
-    'i18n_subsites',
-    'pelican_youtube'
+    'i18n_subsites'
 ]
 
 MARKDOWN = {
     'extension_configs': {
-        'mdx_video': {},
-        'mdx_titlecase': {}
+        'mdx_video': {}
     },
     'output_format': 'html5'
 }
