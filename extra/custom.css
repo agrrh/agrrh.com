@@ -4,3 +4,8 @@ img[alt=preview] {
   width: 40%;
   cursor: pointer;
 }
+
+div.summary > p,
+div.entry-content > p {
+  line-height: 1.4;
+}
