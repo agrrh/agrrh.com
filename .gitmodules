@@ -1,7 +1,7 @@
 [submodule "themes"]
-	path = pelican-themes
+	path = themes
 	url = git@github.com:agrrh/pelican-themes.git
 	branch = add-custom-js-to-pelican-bootstrap3
 [submodule "plugins"]
-	path = pelican-plugins
+	path = plugins
 	url = git@github.com:getpelican/pelican-plugins.git
