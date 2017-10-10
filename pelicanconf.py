@@ -72,8 +72,7 @@ PLUGINS = [
 MARKDOWN = {
     'extension_configs': {
         'mdx_video': {}
-    },
-    'output_format': 'html5'
+    }
 }
 
 # Blogroll
