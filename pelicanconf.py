@@ -6,10 +6,30 @@ AUTHOR = 'agrrh'
 SITENAME = 'Keep It Simple, Sir!'
 SITEURL = 'https://agrrh.com'
 
+GITHUB_USER = 'agrrh'
+GITHUB_REPO_COUNT = 5
+GITHUB_SKIP_FORK = True
+GITHUB_SHOW_USER_LINK = True
+
+THEME = './themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'yeti'
+PYGMENTS_STYLE = 'solarizedlight'
+
+CUSTOM_CSS = 'static/custom.css'
+CUSTOM_JS = 'static/custom.js'
+
 PATH = './'
-STATIC_PATHS = ['pages', 'downloads', 'media', 'extra', 'errors']
+STATIC_PATHS = [
+    'pages',
+    'downloads',
+    'media',
+    'extra',
+    'errors'
+]
 EXTRA_PATH_METADATA = {
-  'extra/favicon.ico': {'path': 'favicon.ico'}
+  'extra/favicon.ico': {'path': 'favicon.ico'},
+  'extra/custom.css': {'path': 'static/custom.css'},
+  'extra/custom.js': {'path': 'static/custom.js'},
 }
 
 ARTICLE_PATHS = [
@@ -31,10 +51,6 @@ TAG_SAVE_AS = 'tag/{slug}.html'
 TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = 'en'
-
-THEME = './themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'yeti'
-PYGMENTS_STYLE = 'solarizedlight'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
