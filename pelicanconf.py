@@ -67,7 +67,7 @@ PLUGIN_PATHS = ["./plugins"]
 PLUGINS = [
     'tag_cloud',
     'i18n_subsites',
-    'pelican_youtube'
+    'pelican-youtube'
 ]
 
 # Blogroll
