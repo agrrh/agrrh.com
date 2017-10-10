@@ -1,12 +1,8 @@
----
-
 Title: Apache, User-Agent filtering
 Date: 2015-07-17 11:27
 Modified: 2017-02-25 13:31
 Tags: apache, mod_rewrite
 Summary: Фильтрация по User-Agent в Apache
-
----
 
 Это была проверочная задача, кажется, в Яндексе.
 
