@@ -6,11 +6,6 @@ AUTHOR = 'agrrh'
 SITENAME = 'Keep It Simple, Sir!'
 SITEURL = 'https://agrrh.com'
 
-GITHUB_USER = 'agrrh'
-GITHUB_REPO_COUNT = 5
-GITHUB_SKIP_FORK = True
-GITHUB_SHOW_USER_LINK = True
-
 THEME = './themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'yeti'
 PYGMENTS_STYLE = 'solarizedlight'
