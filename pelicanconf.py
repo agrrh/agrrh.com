@@ -71,8 +71,11 @@ PLUGINS = [
 
 MARKDOWN = {
     'extension_configs': {
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
         'mdx_video': {}
-    }
+    },
+    'output_format': 'html5'
 }
 
 # Blogroll
