@@ -75,7 +75,6 @@ MARKDOWN = {
     },
     'output_format': 'html5'
 }
-TYPOGRIFY = True
 
 # Blogroll
 LINKS = (
