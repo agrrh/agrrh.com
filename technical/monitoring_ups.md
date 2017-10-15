@@ -1,6 +1,6 @@
 Title: Gathering UPS metrics with NUT and Telegraf
 Date: 2017-10-15 12:28
-Tags: metrics, telegraf
+Tags: metrics, telegraf, influx, bash, nut
 
 I'm going to gather metrics from my UPS.
 
