@@ -26,7 +26,7 @@ apt install nut
 Now add your UPS config to NUT:
 
 ```
-tail -n5 /etc/nut/ups.conf
+# tail -n5 /etc/nut/ups.conf
 
 [ippon]
 driver = blazer_usb
@@ -37,7 +37,7 @@ desc = "IPPON 600 UPS, USB interface"
 Enable network interface for upsd:
 
 ```
-grep ^LISTEN /etc/nut/upsd.conf
+# grep ^LISTEN /etc/nut/upsd.conf
 
 LISTEN 127.0.0.1 3493
 ```
@@ -45,7 +45,7 @@ LISTEN 127.0.0.1 3493
 Add upsd user accounts:
 
 ```
-cat /etc/nut/upsd.users
+# cat /etc/nut/upsd.users
 
 [upsmaster]
         password = passwordmaster
@@ -68,7 +68,7 @@ Add monitor entry to upsmon conf.
 I'm not going to change any settings or perform any actions so using slave for monitoring and not configuring anything more.
 
 ```
-grep ^MONITOR /etc/nut/upsmon.conf
+# grep ^MONITOR /etc/nut/upsmon.conf
 
 MONITOR ippon@localhost 1 upsslave passwordslave slave
 ```
@@ -96,7 +96,7 @@ ups.temperature: 25.0
 Now let's setup Telegraf metrics gathering with this script (should be executable):
 
 ```
-cat /opt/ups_metrics.sh
+# cat /opt/ups_metrics.sh
 
 #!/bin/bash
 
@@ -122,7 +122,7 @@ You could alternate the script knowing bash syntax and [InfluxData line protocol
 Then we add this script as input for our telegraf daemon (which supposed to be setup with proper DB output):
 
 ```
-grep -A 4 inputs.exec /etc/telegraf/telegraf.conf
+# grep -A 4 inputs.exec /etc/telegraf/telegraf.conf
 
 [[inputs.exec]]
   commands = [
