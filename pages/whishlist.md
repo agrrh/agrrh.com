@@ -1,5 +1,6 @@
 Title: Wishlist
 Date: 2016-09-27 20:07
+Status: hidden
 
 ## What is it
 
