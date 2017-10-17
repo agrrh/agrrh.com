@@ -23,6 +23,16 @@ section#content > article > header.page-header > h1 {
   margin: 12px 0px;
 }
 
-section#content > article > div.entry-content > div.panel > div.panel-body {
+div.entry-content > div.panel > div.panel-body {
   padding: 0px 15px;
+}
+
+/* ul/li line-height fix */
+
+div.entry-content > ul > li {
+  margin-bottom: 12px;
+}
+
+div.entry-content > ul > li > ul > li {
+  line-height: 1.6;
 }
