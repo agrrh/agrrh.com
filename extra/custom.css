@@ -6,6 +6,8 @@ img[alt=preview] {
 }
 
 div.summary > p,
-div.entry-content > p {
+div.entry-content > p,
+div.summary > pre > code,
+div.entry-content > pre > code, {
   line-height: 1.4;
 }
