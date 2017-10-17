@@ -23,6 +23,6 @@ section#content > article > header.page-header > h1 {
   margin: 12px 0px;
 }
 
-section#content > article > header.entry-content > div.panel > div.panel-body {
+section#content > article > div.entry-content > div.panel > div.panel-body {
   padding: 0px 15px;
 }
