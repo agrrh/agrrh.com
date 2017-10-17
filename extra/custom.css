@@ -1,9 +1,13 @@
 /* Custom CSS */
 
+/* Image resize on click */
+
 img[alt=preview] {
   width: 40%;
   cursor: pointer;
 }
+
+/* Line height fix */
 
 div.summary > p,
 div.entry-content > p,
@@ -12,6 +16,13 @@ div.entry-content > pre > code {
   line-height: 1.4;
 }
 
-section#content > article > header.page-header {
+/* Entry header fix */
+
+section#content > article > header.page-header,
+section#content > article > header.page-header > h1 {
   margin: 12px 0px;
+}
+
+section#content > article > header.entry-content > div.panel > div.panel-body {
+  padding: 0px 15px;
 }
