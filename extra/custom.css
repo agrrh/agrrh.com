@@ -11,3 +11,7 @@ div.summary > pre > code,
 div.entry-content > pre > code {
   line-height: 1.4;
 }
+
+section#content > article > header.page-header {
+  margin: 12px 0px;
+}
