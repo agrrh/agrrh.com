@@ -8,7 +8,7 @@ Tags: productivity, experience, work, discipline
 
 ![preview]({filename}/media/idiotic-comparsion.png)
 
-Вот этот [https://github.com/agrrh/lychrel/commit/ff4d9ed6d85da6e78f0a007cf87da96f203bf4bd?diff=split](коммит).
+Вот этот [коммит](https://github.com/agrrh/lychrel/commit/ff4d9ed6d85da6e78f0a007cf87da96f203bf4bd?diff=split).
 
 ```
 # before
