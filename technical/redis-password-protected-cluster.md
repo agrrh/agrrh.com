@@ -45,7 +45,7 @@ $ for i in $(seq 1 6); do
 done
 ```
 
-Now let's provision these hosts setting up empty unconfigured redis servers (you could just check [this repo](https://github.com/agrrh/ansible-redis-cluster)):
+Now let's provision these hosts setting up empty unconfigured redis servers (you could just check [provision.yml from this repo](https://github.com/agrrh/ansible-redis-cluster/blob/master/provision.yml):
 
 ```
 $ mkdir ansible-redis-cluster
