@@ -55,7 +55,7 @@ $ ansible-playbook -i inventory provision.yml
 
 Fun thing is that you should provide external IP as first bind address to prevent redis instances trying to connect neighbours via 127.0.0.1 as it uses first address by default. So correct form is: `bind ex.te.rn.al 127.0.0.1`.
 
-If something went wrong and you need to start over, just reset hosts by issuing these 2 commands via redis-cli:
+If something went wrong and you need to start over, just reset hosts by issuing these 2 commands via ansible playbook:
 
 ```
 tasks:
