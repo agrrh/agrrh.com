@@ -6,7 +6,11 @@ So, let's say we would like to set up Redis cluster and make it password-protect
 
 First case could be easily googled to [official docs](https://redis.io/topics/cluster-tutorial), but looks like there's no way to protect your brand new cluster with a password, except [hacking redis-trib.rb](https://trodzen.wordpress.com/2017/02/09/redis-cluster-with-passwords/).
 
-There is one. Meet [rcm](https://github.com/maiha/rcm.cr) utility!
+Nope! There is one!
+
+Meet [rcm](https://github.com/maiha/rcm.cr) utility!
+
+It is written in [Crystal](http://crystal-lang.org/) and supposed to be kinda unstable cause of language "alpha" status, but seems to be OK and was tested by me for most common cases.
 
 - First, download binary file from [releases page](https://github.com/maiha/rcm.cr/releases). Better place it somewhere inside `${PATH}`, as calling it as `./rcm` would result in error, you need to call it like just `rcm`.
 
