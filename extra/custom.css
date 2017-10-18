@@ -9,10 +9,10 @@ img[alt=preview] {
 
 /* Line height fix */
 
-div.summary > p,
-div.entry-content > p,
-div.summary > pre > code,
-div.entry-content > pre > code {
+div.summary p,
+div.entry-content p,
+div.summary pre code,
+div.entry-content pre code {
   line-height: 1.4;
 }
 
@@ -33,7 +33,6 @@ div.entry-content > ul > li {
   margin-bottom: 12px;
 }
 
-div.entry-content > ul > li > ul > li,
-div.entry-content > ul > li > ul > li > p {
+div.entry-content > ul > li > ul > li {
   line-height: 1.6;
 }
