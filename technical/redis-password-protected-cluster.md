@@ -111,4 +111,18 @@ $ rcm status -a MyStronkPw -h 10.1.101.105 -p 7001
 
 In production environment with 3 physical hosts you probably would like to swap two of latest instances to distribute masters and slaves on different machines.
 
-I guess we're done here.
+Now let's check it's writable:
+
+```
+# pip install redis-py-cluster
+$ python
+>>> from rediscluster import StrictRedisCluster
+>>> startup_nodes = [{"host": "10.1.101.105", "port": "7001"}]
+>>> rc = StrictRedisCluster(startup_nodes=startup_nodes, decode_responses=True, password='MyStronkPw')
+>>> rc.set("foo", "bar")
+True
+>>> rc.get("foo")
+'bar'
+```
+
+Yep, it works as expected.
