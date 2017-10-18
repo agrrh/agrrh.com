@@ -33,6 +33,7 @@ div.entry-content > ul > li {
   margin-bottom: 12px;
 }
 
-div.entry-content > ul > li > ul > li {
+div.entry-content > ul > li > ul > li,
+div.entry-content > ul > li > ul > li > p {
   line-height: 1.6;
 }
