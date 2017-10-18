@@ -38,56 +38,51 @@ Very friendly. From 1.5 to 3 thousands of issues were resolved every month at th
 
 All ordered from well-known to rarely used.
 
--   **Languages**: Python, Bash, Perl
+- **Languages**: Python, Bash
 
--   **OS**: Debian since 6, Ubuntu since 14.04, a little bit of CentOS 6/7
+- **OS**: Debian since 6, Ubuntu since 14.04, a little bit of CentOS 6/7
 
--   **Web**:
+- **Web**:
 
-    -   Nginx: reverse-proxy, TLS, balancing, php-fpm, maps
-    -   Apache: PHP+MySQL sites, TLS,
-    -   Caddy: using as personal site platform
-    -   HTML, CSS, PHP, JavaScript: building web interfaces with Bootstrap, Jinja2 and Flask
-    
+    - Nginx: reverse-proxy, TLS, balancing, php-fpm, little bit of maps
+    - Apache: used to run LAMP, know difference between prefork/worker/event MPMs
+    - Caddy: this page powered by this server
+    - Other web stuff: can build web interface with Bootstrap, Jinja2 and Flask
 
--   **Databases**: Redis, MongoDB, InfluxDB, MySQL, XtraDB cluster, SQLite, RethinkDB, ZooKeeper
+- **Databases**: Redis, MongoDB, InfluxDB, MySQL (+ Percona XtraDB), SQLite, RethinkDB
 
--   **Balancing**: Haproxy, ~200k RPS to 50+ workers
+- **Balancing**: Haproxy, ~200k RPS to 50+ workers
 
--   **Config Management**:
+- **Config Management**:
 
-    -   Ansible - hosts and services setup, apps deploy, dynamic inventories
-    -   Salt, Chef - editing existing recipes
+    - Ansible - hosts and services setup, apps deploy, dynamic inventories
+    - Salt, Chef - editing existing recipes
 
+- **CI/CD**:
 
--   **CI/CD**:
+    - Teamcity, Jenkins - agents setup, code deploy, administration, resolving issues
+    - Travis CI - couple of simple deploy scenarios for private projects
 
-    -   Teamcity, Jenkins - agents setup, deploy tasks writing, administration, resolving issues
-    -   Travis CI - couple of simple deploy scenarios for private projects
+- **Monitoring**:
 
+    - TICK stack - setup from scratch, full infrastructure and services monitoring
+    - ELK stack - logs aggregation
+    - Munin - basic monitoring while there's no more complex solutions
+    - Zabbix - editing existing alert policies
 
--   **Monitoring**:
+- **Virtualization**:
 
-    -   TICK stack - setup from scratch, full infrastructure and services monitoring
-    -   ELK stack - logs aggregation
-    -   Munin - basic monitoring while there's no more complex solutions
-    -   Zabbix - editing existing alert policies
+    - Docker - deploying apps to dev/staging with docker-compose
+    - LXC/LXD - just great containers, deploy, non-live migrations
+    - OpenVZ - used until 2015, especially in hosting
+    - Virtualbox - occasionally used as simple solution for persistent setups
 
+- **RAID**:
 
--   **Virtualization**:
+    - software: mdadm, btrfs (it provides simple RAID-like features)
+    - hardware: Adaptec, 3ware, LSI
 
-    -   Docker - apps deploy,
-    -   OpenVZ - used until 2015 as main
-    -   Virtualbox - as simple solution for persistent setups
-
-
--   **RAID**:
-
-    -   software: mdadm, btrfs
-    -   hardware: Adaptec, 3ware, LSI
-
-
--   **Misc**: dnsmasq, OpenVPN, TOR, etc
+- **Misc**: dnsmasq, OpenVPN, TOR, etc
 
 ## Experience
 
