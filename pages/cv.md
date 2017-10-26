@@ -86,7 +86,7 @@ All ordered from well-known to rarely used.
 
 ## Experience
 
-### System Administrator (DevOps) at Roxot (2016 - 2017)
+### Linux SA / DevOps at Roxot (2016 - 2017)
 
 [Roxot](http://roxot.com/) is an Advertising network
 
@@ -100,7 +100,7 @@ All ordered from well-known to rarely used.
 
 Quit cause of reaching company tech ceiling.
 
-### Project Technical Lead at FastVPS (2016)
+### Project Technical Lead / Python backend engineer at FastVPS (2016)
 
 [FastVPS](http://fastvps.ru/) is a Hosting Provider with data-center in Estonia
 
@@ -111,7 +111,7 @@ Quit cause of reaching company tech ceiling.
 
 Sadly, project was never released.
 
-### System Administrator (DevOps) at e4e5group (2015 - 2015)
+### Linux SA / DevOps at e4e5group (2015)
 
 [e4e5group](http://e4e5group.ru/)
 
@@ -120,7 +120,7 @@ Sadly, project was never released.
 
 Unfortunately, company has been closed due to business reasons.
 
-### System Administrator at Yandex (2014 - 2015)
+### Linux SA at Yandex (2014 - 2015)
 
 [Yandex](http://www.yandex.ru/) is lead Russian Federation web-search engine.
 
@@ -156,14 +156,15 @@ As head of department:
 
 Quit due to reaching upper limit for this position.
 
-### Technical Support specialist at Yota (2012-2012)
+### Technical Support specialist at Yota (~2011/2012)
 
-### Technical Support specialist at local ISP (~2011)
+### Technical Support specialist at local ISP (~2010)
 
 ## Projects participated
 
 - [Synergy](http://synergy-project.org/), software IP-KVM (2015)
     - Localization, PR article
+
 - Inferna.ru, gaming portal (~2010)
     - Integrated server monitoring scripts in PHP
     - Wrote few gaming-related articles
