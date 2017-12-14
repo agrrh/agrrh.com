@@ -97,6 +97,10 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 15
 
+# Analytics
+PIWIK_URL = 'piwik.agrrh.com'
+PIWIK_SITE_ID = 1
+
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = False
 
