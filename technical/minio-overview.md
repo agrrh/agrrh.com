@@ -31,7 +31,7 @@ SecretKey: A5tWRdLwULOX6+xsqGDm18te9m0BcOcnfANyt+Qq
 ...
 ```
 
-Then we could visit [http://localhost:9000/] and see the UI:
+Then we could visit [http://localhost:9000/](http://localhost:9000/) and see the UI:
 
 ![preview]({filename}/media/minio.png)
 
