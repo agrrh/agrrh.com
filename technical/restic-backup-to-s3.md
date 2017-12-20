@@ -1,5 +1,6 @@
 Title: Organize backups with Restic and S3
 Date: 2017-12-20 16:23
+Tags: restic, docker, backups, aws, minio
 
 Few days ago we set up [Minio](/2017/minio-self-hosted-s3-compatible-storage), AWS S3-compatible storage.
 
