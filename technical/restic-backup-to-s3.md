@@ -8,6 +8,8 @@ Let's now use another awesome utility, [Restic](https://restic.github.io/), to m
 
 In this example I would be using S3 storage based on `minio`, but it's okay to use AWS one or just a local folder. Another particularity is that I use docker image, but it's almost the same as if I use restic installed locally.
 
+By the way, Amazon offers [free S3 tier](https://aws.amazon.com/s3) with up to 5GB storage and 15GB of monthly traffic and 2k/20k of PUT/GET requests.
+
 First, I'm starting the restic container. You could obtain keys from Minio UI or by checking related contanier's logs:
 
 ```
