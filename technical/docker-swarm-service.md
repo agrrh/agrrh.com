@@ -1,6 +1,6 @@
 Date: 2017-12-21 21:17
 Title: Scale microservice with Docker Swarm
-Tags: docker, vscale
+Tags: docker, swarm, python
 
 At first, this article is VERY similar to this one from [Alex Ellis](https://blog.alexellis.io/microservice-swarm-mode/) blog and differs only with some insignificant details. Feel free to follow the link and read original one.
 
