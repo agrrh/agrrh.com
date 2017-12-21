@@ -133,6 +133,30 @@ k1l36hivwg02  dummy.3  agrrh/dummy-service-py:latest  docker-manager  Running   
 385zd2fuhjk3  dummy.5  agrrh/dummy-service-py:latest  docker-manager  Running        Running 6 seconds ago
 ```
 
+How it works now?
+
+```
+# wget -q -O - http://external-ip:9005/
+{
+  "hostname": "yvdyg8x9xg2s",
+  "uuid": "167d645c-c2ab-479f-a002-abd9a9dba968"
+}
+# wget -q -O - http://external-ip:9005/
+{
+  "hostname": "r8ctq0y7g9w9",
+  "uuid": "be135c86-62bd-4e99-b5a2-9742eec247e9"
+}
+# wget -q -O - http://external-ip:9005/
+{
+  "hostname": "k1l36hivwg02",
+  "uuid": "cf742aba-e6d4-4c3d-960d-21a7377b9d80"
+}
+```
+
+As you see, we can reach containers on different nodes via same IP-address and port number pair.
+
+Kind of magic, eh?
+
 # Cleanup
 
 After it's done, we probably would like to remove our test setup gracefully:
