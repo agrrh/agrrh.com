@@ -36,3 +36,10 @@ div.entry-content > ul > li {
 div.entry-content > ul > li > ul > li {
   line-height: 1.6;
 }
+
+/*  */
+
+div.summary > pre > code,
+div.entry-content > pre > code {
+  white-space: pre;
+}
