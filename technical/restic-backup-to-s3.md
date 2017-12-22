@@ -65,4 +65,4 @@ We've could restore one of the snapshots but in this very example I set up read-
 docker exec -ti restic restic restore <snapshot_id>
 ```
 
-Well, we're done with a great automated backups. You could further customize it with cleanup policies and automated rotation by reading documentation.
+Well, we're done with a great automated backups. You could further customize it with cleanup policies and automated rotation by [reading this documentation section](https://restic.readthedocs.io/en/stable/060_forget.html#removing-snapshots-according-to-a-policy).
