@@ -2,25 +2,25 @@ Title: How to proxy IGMP / IPTV over NAT
 Date: 2015-07-17 12:45
 Tags: igmp, iptv, iptables, debian
 
-*Это старая статья!* Я давно использую [udpxy](http://www.udpxy.com/index-en.html), который намного более удобен для домашнего использования.
+**Outdated!** Nowadays I use [udpxy](http://www.udpxy.com/index-en.html), which is much more efficient for in-home usage.
 
-Вот моя схема подключения интерфейсов на роутере:
+Here's my network interfaces:
 
 - eth0 - WAN
 - eth1 - LAN
 
-В iptables политка по умолчаню для INPUT, конечно, DROP, так что надо разрешить IGMP-трафик:
+Iptables default policy is DROP, so we need to allow IGMP traffic:
 
-```bash
+```
 iptables -A FORWARD -p igmp -i eth0 -o eth1 -j ACCEPT
 
 iptables -A FORWARD -s 224.0.0.0/4 -j ACCEPT
 iptables -A INPUT -s 224.0.0.0/4 -j ACCEPT
 ```
 
-Далее собираем igmpproxy, взять его можно здесь: http://sourceforge.net/projects/igmpproxy/
+Then we need to build [igmpproxy](http://sourceforge.net/projects/igmpproxy/), взять его можно здесь:
 
-```bash
+```
 cd /usr/src
 # wget the source file
 cd igmpproxy-*
@@ -28,15 +28,9 @@ checkinstall -D -y --pkgname=igmpproxy
 dpkg -i igmpproxy_0.1-beta2-1_amd64.deb
 ```
 
-Далее кастомизируем себе конфиг:
+Customize config in `/etc/igmpproxy.conf`, you could get default one from `/usr/local/etc/igmpproxy.conf`, but there's also my own example:
 
-```bash
-cp /usr/local/etc/igmpproxy.conf /etc/igmpproxy.conf
 ```
-
-Here's my config for example:
-
-```bash
 # keep turned off while more than 1 client
 #quickleave
 
@@ -62,12 +56,10 @@ phyint mon.wlan0 disabled
 phyint wlan0 disabled
 ```
 
-А далее можно запускать:
+Now we are ready to go:
 
-```bash
+```
 igmpproxy -d /etc/igmpproxy.conf > /var/log/igmpproxy.log 2>&1 &
 ```
 
-Да-да, в том конкретном случае я просто запихал это куда-то в `/etc/rc.local`, вообще не думая про то, как правильно.
-
-Правильно было бы написать конкретный init-скрипт и включить его в собранный ранее пакет.
+Yes, in this particular situatuin I just placed it somewhere like `/etc/rc.local`, but to keep things organized you would like to create [systemd service](https://www.devdungeon.com/content/creating-systemd-service-files).
