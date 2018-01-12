@@ -32,7 +32,7 @@ Mostly familiar with Debian-based distros. Detected and replaced hundreds of fau
 Experienced with Ansible as deploy engineer. Сontinuous integration with TeamCity (also Jenkins).
 
 ### Technical support
-Very friendly. From 1.5 to 3 thousands of issues were resolved every month at the positions of technical support and head of technical support department.
+Very friendly. From 1500 to 3000 thousands of replies were given to customers every month at the positions of technical support and head of technical support department. Overall score (calculated based on customers feedback) never dropped below 4.9 out of 5.
 
 ## Technologies familiar with
 
