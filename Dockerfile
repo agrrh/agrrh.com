@@ -8,12 +8,6 @@ ADD . /source
 WORKDIR /source
 RUN pelican -o /site
 
-# ---
+FROM nginx:alpine
 
-FROM alpine:latest
-
-VOLUME /site
-WORKDIR /site
-COPY --from=builder /site .
-
-CMD tail -f /dev/null
+COPY --from=builder /site /usr/share/nginx/html
