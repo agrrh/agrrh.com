@@ -1,4 +1,4 @@
-FROM python:3-slim as builder
+FROM python:3-slim as agrrhbuilder
 
 RUN apt update -qq && apt install python-pip -qqy
 RUN pip install pelican
@@ -14,5 +14,5 @@ RUN ls -l /site
 
 FROM nginx:alpine
 
-COPY --from=builder /site /usr/share/nginx/html
+COPY --from=agrrhbuilder /site /usr/share/nginx/html
 RUN ls -l /site
