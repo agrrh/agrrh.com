@@ -6,7 +6,7 @@ RUN pip install pelican
 ADD . /source
 
 WORKDIR /source
-RUN pelican -o /site
+RUN pelican -o /site /source
 
 FROM nginx:alpine
 
