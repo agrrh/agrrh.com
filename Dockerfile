@@ -6,11 +6,11 @@ RUN pip install pelican
 COPY . /source
 
 WORKDIR /source
-RUN pelican -o /site /source
-RUN ls -l /source
-RUN ls -l /site
+RUN pelican -o /site .
+RUN ls -l /source/pages
+RUN ls -l /site/pages
 
 FROM nginx:alpine
 
-COPY --from=builder /site /usr/share/nginx/html
-RUN ls -l /usr/share/nginx/html
+COPY --from=builder --chown=nginx /site /usr/share/nginx/html
+RUN ls -l /usr/share/nginx/html/pages
