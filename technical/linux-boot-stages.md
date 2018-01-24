@@ -36,11 +36,9 @@ It's what let you choose which one from multiple kernel images to use. Also coul
 
 GRUB boots in few stages:
 
-```
-1    While posessing low amount of memory, it knows what disk is. It reads `boot.img` from MBR and point process to begin `core.img`.
-1.5  `core.img` contains knowledge about partitions. Here we load file system drivers needed to properly continue.
-2    We now know about file systems and could read kernel images list and display user a menu to select desired one.
-```
+>- Stage 1: While posessing low amount of memory, it knows what disk is. It reads `boot.img` from MBR and point process to begin `core.img`.
+>- Stage 1.5: `core.img` contains knowledge about partitions. Here we load file system drivers needed to properly continue.
+>- Stage 2: We now know about file systems and could read kernel images list and display user a menu to select desired one.
 
 GRUB loads and executes kernel and initrd image.
 
