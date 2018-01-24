@@ -4,13 +4,13 @@ Tags: linux, mbr, grub, init, boot, kernel
 
 How does linux boots up, from power button to running services.
 
-- Power button
+## Power button
 
 When you pressed power button, current runs through circuits over the motherboard and boot process starts.
 
 It also could be magic packet sent via network or some other remote start method. Let's say, command sent from IPMI.
 
-- Motherboard low-level software
+## Motherboard low-level software
 
 Thus used to be called BIOS. For modern PCs UEFI is used.
 
@@ -22,13 +22,13 @@ UEFI is newer standard and supports actual technologies, like fancy graphics, se
 
 Both of these programs seek for bootloader inside HDD's MBR and try to execute it.
 
-- Master Boot Record
+## Master Boot Record
 
 Master Boot Record is just a place on hard disk where location of bootloader is stored.
 
 In newer systems, GPT could used to store such information. Conceptually it's same process of transferring control to bootloader, but it defers in how data is organized and which limits are applied.
 
-- GRUB
+## GRUB
 
 GRUB stands for Grand Unified Bootloader.
 
@@ -36,13 +36,13 @@ It's what let you choose which one from multiple kernel images to use. Also coul
 
 GRUB boots in few stages:
 
->- Stage 1: While posessing low amount of memory, it knows what disk is. It reads `boot.img` from MBR and point process to begin `core.img`.
->- Stage 1.5: `core.img` contains knowledge about partitions. Here we load file system drivers needed to properly continue.
->- Stage 2: We now know about file systems and could read kernel images list and display user a menu to select desired one.
+- Stage 1: While posessing low amount of memory, it knows what disk is. It reads `boot.img` from MBR and point process to begin `core.img`.
+- Stage 1.5: `core.img` contains knowledge about partitions. Here we load file system drivers needed to properly continue.
+- Stage 2: We now know about file systems and could read kernel images list and display user a menu to select desired one.
 
 GRUB loads and executes kernel and initrd image.
 
-- Kernel and initrd
+## Kernel and initrd
 
 We mount file system stated in selected GRUB menu entry.
 
@@ -52,7 +52,7 @@ So, kernel was loaded. Then it loads initrd, use resources stored inside to moun
 
 Then kernel runs /sbin/init as PID 1 process.
 
-- Init
+## Init
 
 Init is main program which runs other processes. Could be replaced with upstart, systemd or others.
 
@@ -72,7 +72,7 @@ Other initialization systems use other files so don't be confused if you don't f
 
 So, for server machine you probably boot to runlevel 3 and workstation usually boots to runlevel 5.
 
-- Running services
+## Running services
 
 This is where all of your actual software is started.
 
