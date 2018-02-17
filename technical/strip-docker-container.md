@@ -1,5 +1,5 @@
 Title: Strip Docker container
-Date: 2018-03-17 06:05
+Date: 2018-02-17 07:15
 Tags: docker, bash
 
 Today we would get rid of all unnecessary stuff in our Docker images.
