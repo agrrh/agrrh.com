@@ -27,7 +27,9 @@ Then I just `docker build` it tagged as `my-nodejs-app`.
 
 ### Strip the image
 
-This is when I need some additional tool: [strip-docker-image](https://github.com/agrrh/strip-docker-image). Here I use my own fork as original application doesn't support Alpine at the moment.
+This is when I need some additional tool: [strip-docker-image](https://github.com/agrrh/strip-docker-image).
+
+Here I use my own fork as original application doesn't support Alpine at the moment.
 
 ```
 git clone https://github.com/agrrh/strip-docker-image
@@ -43,7 +45,7 @@ cd strip-docker-image
 Let's see if it works:
 
 ```
-$ docker run -ti cindicator-exam-app:stripped
+$ docker run -ti my-nodejs-app:stripped
 Server running at http://0.0.0.0:8081/
 ```
 
@@ -52,7 +54,10 @@ Server running at http://0.0.0.0:8081/
 If we're able to run something but our app?
 
 ```
-$ docker run -ti cindicator-exam-app:stripped ls
+$ docker run -ti my-nodejs-app:latest ls
+main.js
+
+$ docker run -ti my-nodejs-app:stripped ls
 docker: Error response from daemon: OCI runtime create failed: container_linux.go:296: starting container process caused "exec: \"ls\": executable file not found in $PATH": unknown.
 ```
 
