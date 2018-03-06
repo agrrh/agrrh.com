@@ -29,7 +29,7 @@ Then I just `docker build` it tagged as `my-nodejs-app`.
 
 This is when I need some additional tool: [strip-docker-image](https://github.com/agrrh/strip-docker-image).
 
-Here I use my own fork as original application doesn't support Alpine at the moment.
+Here I use my own fork as original application doesn't support Alpine at the moment. **Update:** now it does, author [merged it in](https://github.com/mvanholsteijn/strip-docker-image/commit/2bec01f2718e741a1b7fceb39ba3c1a21613e402).
 
 ```
 git clone https://github.com/agrrh/strip-docker-image
