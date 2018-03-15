@@ -126,7 +126,7 @@ Then we add this script as input for our telegraf daemon (which supposed to be s
 
 [[inputs.exec]]
   commands = [
-    "/home/agrrh/.scripts/ippon_telegraf_metrics.sh"
+    "/opt/ups_metrics.sh"
   ]
   data_format = "influx"
 ```
