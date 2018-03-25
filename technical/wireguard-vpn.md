@@ -1,7 +1,7 @@
 Title: Wireguard, a kernel-space VPN
 Date: 2018-03-23 22:47
 Modified: 2018-03-25 11:14
-Tags: vpn, security, wiredguard
+Tags: vpn, security, wireguard
 
 [WireGuard](https://www.wireguard.com/) is a VPN toolkit. It's written in C, [faster](https://www.wireguard.com/performance/) than OpenVPN/IPsec and much [simpler](https://www.wireguard.com/quickstart/) to use.
 
