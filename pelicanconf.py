@@ -29,10 +29,6 @@ EXTRA_PATH_METADATA = {
 
 ARTICLE_PATHS = [
     'contents',
-    'personal',
-    'movies',
-    'technical',
-    'projects', # for small projects or single post announcements
 ]
 
 ARTICLE_URL = '{date:%Y}/{slug}'
