@@ -28,6 +28,7 @@ EXTRA_PATH_METADATA = {
 }
 
 ARTICLE_PATHS = [
+    'contents',
     'personal',
     'movies',
     'technical',
