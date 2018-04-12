@@ -1,5 +1,6 @@
-Title: Perisher
 Date: 2015-07-17 13:09
+Category: Projects
+Title: Perisher
 Tags: monitoring, python
 
 Client-server application to monitor overall health of small debian-like hosts group.

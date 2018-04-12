@@ -1,5 +1,6 @@
-Title: MissionBread
 Date: 2016-01-23 01:09
+Category: Projects
+Title: MissionBread
 Tags: pygame, games, aim
 
 Couple of days ago I finished a simple game. It was inspired by MissionRed reaction-training game, implemented in Flash.

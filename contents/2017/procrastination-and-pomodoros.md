@@ -1,5 +1,6 @@
-Title: Прокрастинация и помидорки
 Date: 2017-10-06 00:56
+Category: Personal
+Title: Прокрастинация и помидорки
 Tags: pomodoro, work, discipline, pomidorka, productivity, experience
 
 Эта статья-размышление переходит в пропаганду использования техники помидора и во многом опирается на статью в блоге [Джоэла Раньона](https://impossiblehq.com/pomodoro-technique/).

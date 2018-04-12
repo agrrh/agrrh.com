@@ -1,5 +1,6 @@
-Title: Startup Company
 Date: 2017-12-20 14:29
+Category: Projects
+Title: Startup Company
 Tags: game, translation
 
 Полагаю, эта заметка будет востребована только у русскоязычного читателя, так что, изложу суть на родном языке.

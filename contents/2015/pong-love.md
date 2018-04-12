@@ -1,5 +1,6 @@
-Title: Pong in LOVE
 Date: 2015-07-27 11:29
+Category: Projects
+Title: Pong in LOVE
 Tags: lua, love2d, games
 
 Now pong game to reborn in Love2d. :)
