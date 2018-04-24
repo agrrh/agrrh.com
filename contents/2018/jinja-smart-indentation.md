@@ -38,7 +38,7 @@ By default Ansible will indent as you’re doing in your code:
 But if you add at the top of your template the following code:
 
 ```
-#jinja2: lstrip_blocks: “True”
+#jinja2: lstrip_blocks: "True"
 ```
 
 Result will be without indentation:
