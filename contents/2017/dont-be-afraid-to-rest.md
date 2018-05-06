@@ -27,7 +27,7 @@ if i == i[::-1]:             # Is palyndrome
     return True
 ```
 
-Вот этот [коммит](https://github.com/agrrh/lychrel/commit/ff4d9ed6d85da6e78f0a007cf87da96f203bf4bd?diff=split). Код ищет числа-палиндромы.
+Вот этот [репозиторий](https://github.com/agrrh/puzzles/). Код ищет числа-палиндромы.
 
 Из той же копилки откровенно идиотских решений (а я тогда работал в действительно крупной и известной компании):
 
