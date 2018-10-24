@@ -5,7 +5,6 @@ RUN apt update -qq && apt install python-pip -qqy
 COPY ./requirements.txt /source/requirements.txt
 RUN pip install -r requirements.txt
 COPY . /source
-RUN rm -f /source/contents/_skel.md
 RUN pelican -d -o /site .
 
 FROM nginx:alpine
