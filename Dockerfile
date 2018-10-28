@@ -1,7 +1,7 @@
 FROM python:3-slim as builder
 
 WORKDIR /source
-RUN apt update -qq && apt install python-pip -qqy
+RUN apt-get update -qq && apt-get install python-pip -qqy
 COPY ./requirements.txt /source/requirements.txt
 RUN pip install -r requirements.txt
 COPY . /source
