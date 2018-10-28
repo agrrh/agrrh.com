@@ -1,9 +1,9 @@
 FROM python:3-slim as builder
 
 WORKDIR /source
-RUN apt-get update -qq && apt-get install python-pip -qqy
+RUN apt-get update -qq && apt-get install python3-pip -qqy
 COPY ./requirements.txt /source/requirements.txt
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 COPY . /source
 RUN pelican -d -o /site .
 
