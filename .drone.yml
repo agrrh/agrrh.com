@@ -6,6 +6,7 @@ pipeline:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
+      - date
       - docker build . -t drone-example:${DRONE_COMMIT_SHA}
     when:
       event: [push]
