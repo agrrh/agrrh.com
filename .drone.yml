@@ -13,10 +13,12 @@ clone:
 pipeline:
   publish:
     image: docker:18
+    secrets: [ docker_username, docker_password ]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/drone_src:/drone/src
     commands:
+      - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
       - docker build . -t agrrh/website
       - docker push agrrh/website
     when:
