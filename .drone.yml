@@ -1,5 +1,13 @@
 ---
 
+clone:
+  git:
+    image: plugins/git
+    recursive: true
+    submodule_override:
+      plugins: https://github.com/getpelican/pelican-plugins.git
+      themes: https://github.com/agrrh/pelican-themes.git
+
 pipeline:
   build-docker:
     image: docker:17.12.1-ce
@@ -10,4 +18,3 @@ pipeline:
       - docker build . -t drone-example:${DRONE_COMMIT_SHA}
     when:
       event: [push]
-
