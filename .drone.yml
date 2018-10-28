@@ -18,7 +18,7 @@ pipeline:
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/drone_src:/drone/src
     commands:
-      - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
+      - docker login -u ${docker_username} -p ${docker_password}
       - docker build . -t agrrh/website
       - docker push agrrh/website
     when:
