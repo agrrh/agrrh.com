@@ -15,6 +15,7 @@ pipeline:
     image: docker:18
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/drone_src:/drone/src
     commands:
       - docker build . -t agrrh/website
       - docker push agrrh/website
