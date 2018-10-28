@@ -7,6 +7,8 @@ clone:
     submodule_override:
       plugins: https://github.com/getpelican/pelican-plugins.git
       themes: https://github.com/agrrh/pelican-themes.git
+    volumes:
+      - /drone/src:/tmp/drone_src
 
 pipeline:
   build-docker:
