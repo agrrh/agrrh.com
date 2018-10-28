@@ -17,6 +17,9 @@ pipeline:
     tags: [ "latest" ]
     secrets: [ docker_username, docker_password ]
     dockerfile: Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/drone_src:/drone/src
     when:
       branch: master
       event: push
