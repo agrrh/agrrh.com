@@ -11,11 +11,12 @@ clone:
       - /drone/src:/tmp/drone_src
 
 pipeline:
-  build-docker:
-    image: docker:17.12.1-ce
+  publish:
+    image: docker:18-ce
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     commands:
-      - docker build . -t drone-example:${DRONE_COMMIT_SHA}
+      - docker build . -t agrrh/website
+      - docker push agrrh/website
     when:
       event: [push]
