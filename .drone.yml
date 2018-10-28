@@ -17,7 +17,7 @@ pipeline:
     tags: [ "latest" ]
     secrets: [ docker_username, docker_password ]
     dockerfile: Dockerfile
-    cleanup: false
+    purge: false
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/drone_src:/drone/src
