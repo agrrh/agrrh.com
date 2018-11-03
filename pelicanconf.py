@@ -21,11 +21,9 @@ STATIC_PATHS = [
     'extra',
     'errors'
 ]
-EXTRA_PATH_METADATA = {
-  'extra/favicon.ico': {'path': 'favicon.ico'},
-  'extra/custom.css': {'path': 'static/custom.css'},
-  'extra/custom.js': {'path': 'static/custom.js'},
-}
+EXTRA_PATH_METADATA = {'extra/favicon.ico': {'path': 'favicon.ico'},
+                       'extra/custom.css': {'path': 'static/custom.css'},
+                       'extra/custom.js': {'path': 'static/custom.js'}}
 
 ARTICLE_PATHS = [
     'contents',
@@ -73,7 +71,7 @@ MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
-        'markdown.extensions.tables':{},
+        'markdown.extensions.tables': {},
         'mdx_video': {}
     },
     'output_format': 'html5'
