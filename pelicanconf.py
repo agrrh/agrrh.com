@@ -73,6 +73,7 @@ MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
+        'markdown.extensions.tables':{},
         'mdx_video': {}
     },
     'output_format': 'html5'
