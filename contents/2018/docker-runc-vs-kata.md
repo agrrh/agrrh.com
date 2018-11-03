@@ -37,6 +37,6 @@ Resources:
 
 It's safe to say we can see top performance of RunC container here while Kata container (VM) was a little bit oveloaded so performance degraded. If we drop concurrency down, the gap between those technologies wouldn't be so huge, but still very significant.
 
-Kata containers look like an interesting tool to limit resources between containers in a "hard" way, for example.
+Kata containers fail to contest lightning speeds of pure RunC containers, but look like an interesting tool to limit resources between containers in a "hard" way, for example.
 
-Whole idea is still ironic: containers came to evade VM overhead and provide lightweight isolation, so here's VMs for your containers engine, just in case. :)
+And I must say, whole idea is really ironic: containers came to evade VM overhead and provide lightweight isolation, so here's VMs for your containers engine, just in case. :)
