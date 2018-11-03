@@ -13,19 +13,27 @@ Here's a simple gist on how to [install Docker CE with Kata](https://gist.github
 
 Then you would like to run simple service to compare performance, I was using my [dummy-service-py](https://hub.docker.com/r/agrrh/dummy-service-py/), feel free to use it too.
 
+Workload was generated with Siege utility:
+
+```
+siege -c 512 -t 60s http://addr:port/
+```
+
 Results are following:
 
-| 🐳          | RunC | Kata |
-|-
-|Workload     | `siege -c 512 -t 60s` | `siege -c 512 -t 60s` |
-|Availability | 100% | 100% |
-|Transactions | 43274 hits | 17548 hits |
-|Response time| 0.20 s | 1.17 s |
-|Rate         | 724.37 trans/sec | 293.05 trans/sec |
-|Concurrency  | 145.08 | 342.96 |
-|**Resources:**|||
-|CPU usage    | ~100%| ~100% |
-|Memory usage | ~20M | ~150M |
+```
+🐳                RunC        Kata
+---
+Availability      100         100       %
+Transactions      43274       17548     hits
+Response          0.20        1.17      sec
+Rate              724.37      293.05    trans/sec
+Concurrency       145.08      342.96
+
+Resources:
+  CPU             ~100%       ~100%
+  RAM             ~20M        ~150M
+```
 
 It's safe to say we can see top performance of RunC container here while Kata container (VM) was a little bit oveloaded so performance degraded. If we drop concurrency down, the gap between those technologies wouldn't be so huge, but still very significant.
 
