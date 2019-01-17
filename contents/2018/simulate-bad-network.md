@@ -1,7 +1,7 @@
 Date: 2018-10-24 23:52
 Category: Technical
 Title: Simulate packet loss and delays
-Tags: iptables, network
+Tags: iptables, network, tc
 
 It was neccessary to test failover script which should switch uplink in case of main ISP outage.
 
