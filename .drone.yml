@@ -10,8 +10,11 @@ pipeline:
   publish:
     image: plugins/docker
     repo: agrrh/website
-    tags: [ "latest" ]
-    secrets: [ docker_username, docker_password ]
+    tags:
+      - latest
+    secrets:
+      - docker_username
+      - docker_password
     dockerfile: Dockerfile
     purge: false
     volumes:
