@@ -27,6 +27,14 @@ div.entry-content > div.panel > div.panel-body {
   padding: 0px 15px;
 }
 
+article > header.page-header {
+  border-bottom: none;
+}
+
+article > div.entry-content > div.panel {
+  border: none;
+}
+
 /* ul/li line-height fix */
 
 div.entry-content > ul > li {
