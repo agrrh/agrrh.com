@@ -3,10 +3,6 @@
 clone:
   git:
     image: plugins/git
-    recursive: true
-    submodule_override:
-      plugins: https://github.com/getpelican/pelican-plugins.git
-      themes: https://github.com/agrrh/pelican-themes.git
     volumes:
       - /tmp/drone_src:/drone/src
 
